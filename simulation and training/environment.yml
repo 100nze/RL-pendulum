@@ -1,0 +1,10 @@
+name: rl-pendulum
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.9
+  - gymnasium=0.29.1
+  - stable-baselines3=2.3.2
+  - numpy=2.0.0
+  - pytorch=2.0.0

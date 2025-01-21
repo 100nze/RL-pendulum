@@ -1,0 +1,3922 @@
+Hh�ښ�j%�(35) boot�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 18 2024 13:34:45[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=50f6ch (331628) map[0m
+[0;32mI (218) esp_image: segment 1: paddr=00060f94 vaddr=3ffb0000 size=022b4h (  8884) load[0m
+[0;32mI (221) esp_image: segment 2: paddr=00063250 vaddr=40080000 size=0cb54h ( 52052) load[0m
+[0;32mI (244) esp_image: segment 3: paddr=0006fdac vaddr=00000000 size=0026ch (   620) [0m
+[0;32mI (244) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=2d514h (185620) map[0m
+[0;32mI (319) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (320) boot: Disabling RNG early entropy source...[0m
+[0;32mI (331) cpu_start: Multicore app[0m
+[0;32mI (340) cpu_start: Pro cpu start user code[0m
+[0;32mI (340) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (340) cpu_start: Application information:[0m
+[0;32mI (343) cpu_start: Project name:     project-1[0m
+[0;32mI (348) cpu_start: App version:      221c9c4-dirty[0m
+[0;32mI (353) cpu_start: Compile time:     Sep 18 2024 13:33:56[0m
+[0;32mI (360) cpu_start: ELF file SHA256:  16ebfa1fc...[0m
+[0;32mI (365) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (370) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (374) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (379) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (384) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (391) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (397) heap_init: At 3FFB3148 len 0002CEB8 (179 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (410) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (416) heap_init: At 4008CB54 len 000134AC (77 KiB): IRAM[0m
+[0;32mI (424) spi_flash: detected chip: generic[0m
+[0;32mI (427) spi_flash: flash io: dio[0m
+[0;33mW (431) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (445) main_task: Started on CPU0[0m
+[0;32mI (455) main_task: Calling app_main()[0m
+[0;32mI (455) MAIN: SETUP![0m
+[0;32mI (455) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (465) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (465) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (475) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (485) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) main_task: Returned from app_main()[0m
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.424843, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.144734, vel: 0.062318, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.151018, vel: 0.124547, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.151018, vel: 0.000000, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.157300, vel: 0.124750, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.169867, vel: 0.249149, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.179291, vel: 0.186761, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.185575, vel: 0.124517, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.198141, vel: 0.249154, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.226415, vel: 0.560237, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.270398, vel: 0.871498, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.330088, vel: 1.182467, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.433761, vel: 2.055495, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.584557, vel: 2.989797, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.694513, vel: 2.180490, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.751062, vel: 1.121178, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.807610, vel: 1.121173, best_action: -1.000000, tank: 9.999999
+classification done
+th: 3.939557, vel: 2.616119, best_action: -1.000000, tank: 9.999999
+classification done
+th: 4.150044, vel: 4.172854, best_action: -1.000000, tank: 9.999999
+classification done
+th: 4.401371, vel: 4.982900, best_action: -1.000000, tank: 9.999999
+classification done
+th: 4.652699, vel: 4.984076, best_action: -1.000000, tank: 9.999999
+classification done
+th: 4.888318, vel: 4.671562, best_action: -1.000000, tank: 9.999999
+classification done
+th: 5.095663, vel: 4.110563, best_action: -1.000000, tank: 9.999999
+classification done
+th: 5.268451, vel: 3.426093, best_action: 1.000000, tank: 9.999999
+classification done
+th: 5.230752, vel: -0.747713, best_action: 1.000000, tank: 9.999999
+classification done
+th: 4.916593, vel: -6.223803, best_action: 1.000000, tank: 9.999999
+classification done
+th: 4.300840, vel: -12.209069, best_action: 0.370993, tank: 9.999999
+classification done
+th: 3.512301, vel: -15.613410, best_action: -1.000000, tank: 9.999999
+classification done
+th: 2.893407, vel: -12.265525, best_action: -1.000000, tank: 9.984916
+classification done
+th: 2.532124, vel: -7.160075, best_action: -1.000000, tank: 9.975828
+classification done
+th: 2.516416, vel: -0.311442, best_action: -1.000000, tank: 9.975416
+classification done
+th: 2.811725, vel: 5.851890, best_action: 0.278107, tank: 9.975416
+classification done
+th: 3.198141, vel: 7.653014, best_action: -1.000000, tank: 9.973048
+classification done
+th: 3.785619, vel: 11.647526, best_action: -1.000000, tank: 9.973048
+classification done
+th: 4.391946, vel: 12.015041, best_action: -1.000000, tank: 9.973048
+classification done
+th: 4.995132, vel: 11.956829, best_action: -1.000000, tank: 9.973048
+classification done
+th: 5.557477, vel: 11.147686, best_action: 0.248598, tank: 9.973048
+classification done
+th: 5.940752, vel: 7.591098, best_action: 1.000000, tank: 9.970993
+classification done
+th: 6.132389, vel: 3.801417, best_action: 1.000000, tank: 9.966074
+classification done
+th: 6.066415, vel: -1.308250, best_action: -0.327143, tank: 9.966074
+classification done
+th: 5.912477, vel: -3.049421, best_action: 1.000000, tank: 9.964824
+classification done
+th: 5.488362, vel: -8.410645, best_action: 1.000000, tank: 9.964824
+classification done
+th: 4.838052, vel: -12.893766, best_action: 1.000000, tank: 9.964824
+classification done
+th: 3.917566, vel: -18.241903, best_action: -0.054858, tank: 9.964824
+classification done
+th: 2.962522, vel: -18.900156, best_action: -1.000000, tank: 9.964824
+classification done
+th: 2.189690, vel: -15.314823, best_action: -1.000000, tank: 9.946349
+classification done
+th: 1.796991, vel: -7.787321, best_action: -1.000000, tank: 9.936509
+classification done
+th: 1.775000, vel: -0.436250, best_action: -0.433917, tank: 9.935933
+classification done
+th: 2.035752, vel: 5.170169, best_action: 0.854762, tank: 9.935933
+classification done
+th: 2.331062, vel: 5.852117, best_action: 1.000000, tank: 9.929572
+classification done
+th: 2.657787, vel: 6.482267, best_action: 0.940847, tank: 9.921320
+classification done
+th: 2.899690, vel: 4.790814, best_action: -1.000000, tank: 9.915524
+classification done
+th: 3.267256, vel: 7.287055, best_action: -1.000000, tank: 9.915524
+classification done
+th: 3.741637, vel: 9.405225, best_action: -1.000000, tank: 9.915524
+classification done
+th: 4.303982, vel: 11.147470, best_action: -1.000000, tank: 9.915524
+classification done
+th: 4.878893, vel: 11.393855, best_action: -1.000000, tank: 9.915524
+classification done
+th: 5.416106, vel: 10.646301, best_action: -1.000000, tank: 9.915524
+classification done
+th: 5.928185, vel: 10.148432, best_action: 1.000000, tank: 9.915524
+classification done
+th: 6.220353, vel: 5.791577, best_action: 1.000000, tank: 9.908113
+classification done
+th: 0.034557, vel: -122.665894, best_action: -0.472279, tank: 9.908113
+classification done
+th: 0.069115, vel: 0.686456, best_action: 0.380807, tank: 9.908113
+classification done
+th: 0.000000, vel: -1.370522, best_action: -0.267008, tank: 9.908113
+classification done
+th: 6.173230, vel: 122.482292, best_action: 0.342858, tank: 9.908113
+classification done
+th: 6.000442, vel: -3.428880, best_action: -0.444783, tank: 9.908113
+classification done
+th: 5.764823, vel: -4.667471, best_action: 1.000000, tank: 9.905531
+classification done
+th: 5.306150, vel: -9.096143, best_action: 1.000000, tank: 9.905531
+classification done
+th: 4.618141, vel: -13.641495, best_action: 1.000000, tank: 9.905531
+classification done
+th: 3.675663, vel: -18.676615, best_action: -1.000000, tank: 9.905531
+classification done
+th: 2.840000, vel: -16.558615, best_action: -1.000000, tank: 9.885714
+classification done
+th: 2.261947, vel: -11.454983, best_action: -1.000000, tank: 9.871553
+classification done
+th: 2.076593, vel: -3.675038, best_action: -1.000000, tank: 9.866792
+classification done
+th: 2.252522, vel: 3.490038, best_action: -1.000000, tank: 9.866792
+classification done
+th: 2.748893, vel: 9.848641, best_action: 1.000000, tank: 9.866792
+classification done
+th: 3.251548, vel: 9.964215, best_action: -1.000000, tank: 9.854364
+classification done
+th: 3.892433, vel: 12.707146, best_action: -1.000000, tank: 9.854364
+classification done
+th: 4.517610, vel: 12.388572, best_action: -1.000000, tank: 9.854364
+classification done
+th: 5.130221, vel: 12.140042, best_action: -1.000000, tank: 9.854364
+classification done
+th: 5.701991, vel: 11.331382, best_action: 1.000000, tank: 9.854364
+classification done
+th: 6.025575, vel: 6.414328, best_action: 1.000000, tank: 9.846189
+classification done
+th: 6.119822, vel: 1.869134, best_action: 0.220789, tank: 9.843741
+classification done
+th: 6.028717, vel: -1.804605, best_action: -0.145670, tank: 9.843741
+classification done
+th: 5.865354, vel: -3.236192, best_action: 1.000000, tank: 9.843198
+classification done
+th: 5.526062, vel: -6.729181, best_action: 1.000000, tank: 9.843198
+classification done
+th: 4.910309, vel: -12.210038, best_action: 1.000000, tank: 9.843198
+classification done
+th: 4.018097, vel: -17.682278, best_action: 0.337384, tank: 9.843198
+classification done
+th: 3.003363, vel: -20.088577, best_action: -1.000000, tank: 9.843198
+classification done
+th: 2.252522, vel: -14.881688, best_action: -1.000000, tank: 9.825199
+classification done
+th: 1.815841, vel: -8.657957, best_action: -1.000000, tank: 9.814315
+classification done
+th: 1.756150, vel: -1.184072, best_action: -0.399286, tank: 9.812758
+classification done
+th: 1.976062, vel: 4.357530, best_action: -0.216514, tank: 9.812758
+classification done
+th: 2.378186, vel: 7.969320, best_action: 1.000000, tank: 9.812758
+classification done
+th: 2.758318, vel: 7.537529, best_action: 0.387035, tank: 9.803219
+classification done
+th: 3.166725, vel: 8.088548, best_action: -1.000000, tank: 9.799576
+classification done
+th: 3.713363, vel: 10.838236, best_action: -1.000000, tank: 9.799576
+classification done
+th: 4.275708, vel: 11.144372, best_action: -1.000000, tank: 9.799576
+classification done
+th: 4.853761, vel: 11.454988, best_action: -1.000000, tank: 9.799576
+classification done
+th: 5.394114, vel: 10.708982, best_action: -1.000000, tank: 9.799576
+classification done
+th: 5.909336, vel: 10.211710, best_action: 1.000000, tank: 9.799576
+classification done
+th: 6.201504, vel: 5.791815, best_action: 1.000000, tank: 9.792166
+classification done
+th: 0.015708, vel: -122.673195, best_action: -0.457129, tank: 9.792166
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.473259, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.260973, vel: 2.369553, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.452610, vel: 3.799684, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.738496, vel: 5.667268, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.068362, vel: 6.538876, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.395088, vel: 6.476490, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.696681, vel: 5.979476, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.966858, vel: 5.355659, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.215044, vel: 4.919731, best_action: -0.225998, tank: 10.000000
+classification done
+th: 5.378407, vel: 3.235167, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.259026, vel: -2.366735, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.919734, vel: -6.726513, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.281991, vel: -12.643095, best_action: 0.387775, tank: 10.000000
+classification done
+th: 3.436902, vel: -16.728468, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.720619, vel: -14.194219, best_action: -1.000000, tank: 9.982755
+classification done
+th: 2.227389, vel: -9.773518, best_action: -1.000000, tank: 9.970546
+classification done
+th: 2.082876, vel: -2.866244, best_action: -1.000000, tank: 9.966816
+classification done
+th: 2.268230, vel: 3.676929, best_action: -1.000000, tank: 9.966816
+classification done
+th: 2.733186, vel: 9.223484, best_action: 1.000000, tank: 9.966816
+classification done
+th: 3.166725, vel: 8.596178, best_action: -1.000000, tank: 9.956006
+classification done
+th: 3.691371, vel: 10.403859, best_action: -1.000000, tank: 9.956006
+classification done
+th: 4.184602, vel: 9.776235, best_action: -1.000000, tank: 9.956006
+classification done
+th: 4.662123, vel: 9.465429, best_action: -1.000000, tank: 9.956006
+classification done
+th: 5.101946, vel: 8.720239, best_action: -1.000000, tank: 9.956006
+classification done
+th: 5.522920, vel: 8.347033, best_action: 1.000000, tank: 9.956006
+classification done
+th: 5.723982, vel: 3.987342, best_action: 1.000000, tank: 9.950850
+classification done
+th: 5.720840, vel: -0.062306, best_action: 1.000000, tank: 9.950850
+classification done
+th: 5.469513, vel: -4.982199, best_action: 1.000000, tank: 9.950850
+classification done
+th: 4.957433, vel: -10.152868, best_action: 1.000000, tank: 9.950850
+classification done
+th: 4.159469, vel: -15.814422, best_action: 0.576071, tank: 9.950850
+classification done
+th: 3.157300, vel: -19.837845, best_action: -1.000000, tank: 9.950850
+classification done
+th: 2.324779, vel: -16.500614, best_action: -1.000000, tank: 9.931100
+classification done
+th: 1.768717, vel: -11.026410, best_action: -1.000000, tank: 9.917442
+classification done
+th: 1.602212, vel: -3.301499, best_action: -0.444817, tank: 9.913156
+classification done
+th: 1.727876, vel: 2.490216, best_action: -1.000000, tank: 9.913156
+classification done
+th: 2.120575, vel: 7.791337, best_action: 1.000000, tank: 9.913156
+classification done
+th: 2.554115, vel: 8.602157, best_action: 1.000000, tank: 9.902347
+classification done
+th: 2.937389, vel: 7.598915, best_action: -1.000000, tank: 9.892732
+classification done
+th: 3.364646, vel: 8.471431, best_action: -1.000000, tank: 9.892732
+classification done
+th: 3.810752, vel: 8.844474, best_action: -1.000000, tank: 9.892732
+classification done
+th: 4.285132, vel: 9.405215, best_action: -1.000000, tank: 9.892732
+classification done
+th: 4.737522, vel: 8.967614, best_action: -1.000000, tank: 9.892732
+classification done
+th: 5.155354, vel: 8.284398, best_action: -1.000000, tank: 9.892732
+classification done
+th: 5.557477, vel: 7.973587, best_action: 1.000000, tank: 9.892732
+classification done
+th: 5.742831, vel: 3.675821, best_action: 1.000000, tank: 9.887971
+classification done
+th: 5.733407, vel: -0.186896, best_action: 1.000000, tank: 9.887971
+classification done
+th: 5.472654, vel: -5.168732, best_action: 1.000000, tank: 9.887971
+classification done
+th: 4.957433, vel: -10.216165, best_action: 1.000000, tank: 9.887971
+classification done
+th: 4.156327, vel: -15.877004, best_action: 0.576071, tank: 9.887971
+classification done
+th: 3.151018, vel: -19.901592, best_action: -1.000000, tank: 9.887971
+classification done
+th: 2.318495, vel: -16.499315, best_action: -1.000000, tank: 9.868220
+classification done
+th: 1.762433, vel: -11.027066, best_action: -1.000000, tank: 9.854563
+classification done
+th: 1.592788, vel: -3.363921, best_action: -0.447266, tank: 9.850197
+classification done
+th: 1.715310, vel: 2.427959, best_action: -1.000000, tank: 9.850197
+classification done
+th: 2.108009, vel: 7.790411, best_action: 1.000000, tank: 9.850197
+classification done
+th: 2.541548, vel: 8.602152, best_action: 1.000000, tank: 9.839388
+classification done
+th: 2.924823, vel: 7.598769, best_action: -1.000000, tank: 9.829773
+classification done
+th: 3.358362, vel: 8.595837, best_action: -1.000000, tank: 9.829773
+classification done
+th: 3.807610, vel: 8.906932, best_action: -1.000000, tank: 9.829773
+classification done
+th: 4.288274, vel: 9.529222, best_action: -1.000000, tank: 9.829773
+classification done
+th: 4.743805, vel: 9.029716, best_action: -1.000000, tank: 9.829773
+classification done
+th: 5.164779, vel: 8.346527, best_action: -1.000000, tank: 9.829773
+classification done
+th: 5.573185, vel: 8.097524, best_action: 1.000000, tank: 9.829773
+classification done
+th: 5.764823, vel: 3.800447, best_action: 1.000000, tank: 9.824854
+classification done
+th: 5.764823, vel: 0.000000, best_action: 1.000000, tank: 9.824854
+classification done
+th: 5.522920, vel: -4.804235, best_action: 1.000000, tank: 9.824854
+classification done
+th: 5.026548, vel: -9.843762, best_action: 1.000000, tank: 9.824854
+classification done
+th: 4.250575, vel: -15.383781, best_action: 1.000000, tank: 9.824854
+classification done
+th: 3.220132, vel: -20.418959, best_action: -1.000000, tank: 9.824854
+classification done
+th: 2.315354, vel: -17.933096, best_action: -1.000000, tank: 9.803588
+classification done
+th: 1.687035, vel: -12.457493, best_action: -1.000000, tank: 9.788293
+classification done
+th: 1.451416, vel: -4.671744, best_action: -0.480876, tank: 9.782276
+classification done
+th: 1.523672, vel: 1.431730, best_action: -1.000000, tank: 9.782276
+classification done
+th: 1.875531, vel: 6.982149, best_action: 1.000000, tank: 9.782276
+classification done
+th: 2.290221, vel: 8.227489, best_action: 1.000000, tank: 9.771913
+classification done
+th: 2.689203, vel: 7.915373, best_action: 1.000000, tank: 9.761923
+classification done
+th: 2.940531, vel: 4.983192, best_action: -1.000000, tank: 9.755517
+classification done
+th: 3.235840, vel: 5.855139, best_action: -1.000000, tank: 9.755517
+classification done
+th: 3.578274, vel: 6.789335, best_action: -1.000000, tank: 9.755517
+classification done
+th: 3.986681, vel: 8.099140, best_action: -1.000000, tank: 9.755517
+classification done
+th: 4.398230, vel: 8.161593, best_action: -1.000000, tank: 9.755517
+classification done
+th: 4.784646, vel: 7.660913, best_action: -1.000000, tank: 9.755517
+classification done
+th: 5.139646, vel: 7.038614, best_action: -1.000000, tank: 9.755517
+classification done
+th: 5.475796, vel: 6.665282, best_action: 1.000000, tank: 9.755517
+classification done
+th: 5.588893, vel: 2.242399, best_action: 1.000000, tank: 9.752587
+classification done
+th: 5.478937, vel: -2.181066, best_action: 1.000000, tank: 9.752587
+classification done
+th: 5.101946, vel: -7.476129, best_action: 1.000000, tank: 9.752587
+classification done
+th: 4.442212, vel: -13.080612, best_action: 1.000000, tank: 9.752587
+classification done
+th: 3.509159, vel: -18.496080, best_action: -1.000000, tank: 9.752587
+classification done
+th: 2.651504, vel: -16.994701, best_action: -1.000000, tank: 9.732306
+classification done
+th: 2.029469, vel: -12.326562, best_action: -1.000000, tank: 9.717152
+classification done
+th: 1.781283, vel: -4.921201, best_action: -1.000000, tank: 9.710824
+classification done
+th: 1.910088, vel: 2.555457, best_action: -0.439865, tank: 9.710824
+classification done
+th: 2.299646, vel: 7.721346, best_action: 1.000000, tank: 9.710824
+classification done
+th: 2.654646, vel: 7.043097, best_action: 1.000000, tank: 9.701888
+classification done
+th: 2.946814, vel: 5.792505, best_action: -1.000000, tank: 9.694478
+classification done
+th: 3.286106, vel: 6.727042, best_action: -1.000000, tank: 9.694478
+classification done
+th: 3.659956, vel: 7.412210, best_action: -1.000000, tank: 9.694478
+classification done
+th: 4.087212, vel: 8.471262, best_action: -1.000000, tank: 9.694478
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.251548, vel: 2.182611, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.446327, vel: 3.860984, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.732212, vel: 5.667258, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.065221, vel: 6.602601, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.391946, vel: 6.476609, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.690398, vel: 5.916021, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.960575, vel: 5.355552, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.205619, vel: 4.857459, best_action: -0.331859, tank: 10.000000
+classification done
+th: 5.378407, vel: 3.421741, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.271593, vel: -2.117601, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.944867, vel: -6.477251, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.322832, vel: -12.333899, best_action: 0.516953, tank: 10.000000
+classification done
+th: 3.474601, vel: -16.790989, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.739469, vel: -14.567757, best_action: -1.000000, tank: 9.982343
+classification done
+th: 2.227389, vel: -10.147422, best_action: -1.000000, tank: 9.969696
+classification done
+th: 2.060885, vel: -3.301562, best_action: -1.000000, tank: 9.965409
+classification done
+th: 2.227389, vel: 3.302610, best_action: -1.000000, tank: 9.965409
+classification done
+th: 2.679778, vel: 8.974908, best_action: 1.000000, tank: 9.965409
+classification done
+th: 3.107035, vel: 8.470595, best_action: -1.000000, tank: 9.954748
+classification done
+th: 3.634823, vel: 10.466990, best_action: -1.000000, tank: 9.954748
+classification done
+th: 4.140619, vel: 10.023309, best_action: -1.000000, tank: 9.954748
+classification done
+th: 4.627566, vel: 9.650360, best_action: -1.000000, tank: 9.954748
+classification done
+th: 5.079955, vel: 8.969383, best_action: -1.000000, tank: 9.954748
+classification done
+th: 5.510354, vel: 8.535757, best_action: 1.000000, tank: 9.954748
+classification done
+th: 5.720840, vel: 4.174330, best_action: 1.000000, tank: 9.949357
+classification done
+th: 5.727123, vel: 0.124599, best_action: 1.000000, tank: 9.949192
+classification done
+th: 5.488362, vel: -4.735066, best_action: 1.000000, tank: 9.949192
+classification done
+th: 4.988849, vel: -9.903901, best_action: 1.000000, tank: 9.949192
+classification done
+th: 4.206593, vel: -15.511424, best_action: 0.730021, tank: 9.949192
+classification done
+th: 3.198141, vel: -19.961821, best_action: -1.000000, tank: 9.949192
+classification done
+th: 2.343628, vel: -16.935139, best_action: -1.000000, tank: 9.928977
+classification done
+th: 1.759292, vel: -11.585698, best_action: -1.000000, tank: 9.914675
+classification done
+th: 1.561372, vel: -3.924499, best_action: -0.448494, tank: 9.909598
+classification done
+th: 1.661902, vel: 1.992130, best_action: -1.000000, tank: 9.909598
+classification done
+th: 2.035752, vel: 7.418976, best_action: 1.000000, tank: 9.909598
+classification done
+th: 2.456725, vel: 8.352645, best_action: 1.000000, tank: 9.899086
+classification done
+th: 2.840000, vel: 7.599071, best_action: -0.524663, tank: 9.889471
+classification done
+th: 3.176150, vel: 6.657503, best_action: -1.000000, tank: 9.889471
+classification done
+th: 3.637964, vel: 9.158251, best_action: -1.000000, tank: 9.889471
+classification done
+th: 4.084070, vel: 8.844640, best_action: -1.000000, tank: 9.889471
+classification done
+th: 4.520751, vel: 8.657269, best_action: -1.000000, tank: 9.889471
+classification done
+th: 4.926017, vel: 8.035089, best_action: -1.000000, tank: 9.889471
+classification done
+th: 5.299867, vel: 7.413969, best_action: -0.919693, tank: 9.889471
+classification done
+th: 5.667433, vel: 7.279843, best_action: 1.000000, tank: 9.889471
+classification done
+th: 5.827654, vel: 3.178422, best_action: 1.000000, tank: 9.885344
+classification done
+th: 5.808805, vel: -0.373832, best_action: 1.000000, tank: 9.885344
+classification done
+th: 5.566902, vel: -4.794902, best_action: 1.000000, tank: 9.885344
+classification done
+th: 5.079955, vel: -9.656667, best_action: 1.000000, tank: 9.885344
+classification done
+th: 4.313406, vel: -15.196936, best_action: 1.000000, tank: 9.885344
+classification done
+th: 3.289248, vel: -20.296452, best_action: -1.000000, tank: 9.885344
+classification done
+th: 2.378186, vel: -18.057276, best_action: -1.000000, tank: 9.863947
+classification done
+th: 1.734159, vel: -12.762100, best_action: -1.000000, tank: 9.848300
+classification done
+th: 1.482832, vel: -4.983490, best_action: -0.457943, tank: 9.841894
+classification done
+th: 1.539380, vel: 1.120531, best_action: -1.000000, tank: 9.841894
+classification done
+th: 1.875531, vel: 6.669254, best_action: 1.000000, tank: 9.841894
+classification done
+th: 2.274513, vel: 7.915842, best_action: 1.000000, tank: 9.831904
+classification done
+th: 2.657787, vel: 7.605555, best_action: 1.000000, tank: 9.822289
+classification done
+th: 2.899690, vel: 4.796324, best_action: -1.000000, tank: 9.816117
+classification done
+th: 3.195000, vel: 5.855023, best_action: -1.000000, tank: 9.816117
+classification done
+th: 3.540575, vel: 6.851624, best_action: -1.000000, tank: 9.816117
+classification done
+th: 3.955265, vel: 8.221289, best_action: -1.000000, tank: 9.816117
+classification done
+th: 4.376239, vel: 8.346527, best_action: -1.000000, tank: 9.816117
+classification done
+th: 4.768938, vel: 7.785309, best_action: -1.000000, tank: 9.816117
+classification done
+th: 5.133362, vel: 7.225201, best_action: -1.000000, tank: 9.816117
+classification done
+th: 5.478937, vel: 6.853517, best_action: 1.000000, tank: 9.816117
+classification done
+th: 5.601460, vel: 2.429177, best_action: 1.000000, tank: 9.812946
+classification done
+th: 5.500929, vel: -1.993508, best_action: 1.000000, tank: 9.812946
+classification done
+th: 5.133362, vel: -7.291116, best_action: 1.000000, tank: 9.812946
+classification done
+th: 4.486195, vel: -12.833754, best_action: 1.000000, tank: 9.812946
+classification done
+th: 3.562566, vel: -18.301996, best_action: -1.000000, tank: 9.812946
+classification done
+th: 2.704911, vel: -16.998749, best_action: -1.000000, tank: 9.792665
+classification done
+th: 2.073451, vel: -12.512086, best_action: -1.000000, tank: 9.777300
+classification done
+th: 1.812699, vel: -5.170169, best_action: -1.000000, tank: 9.770661
+classification done
+th: 1.922655, vel: 2.181098, best_action: -0.405372, tank: 9.770661
+classification done
+th: 2.290221, vel: 7.284600, best_action: 1.000000, tank: 9.770661
+classification done
+th: 2.623230, vel: 6.606535, best_action: 1.000000, tank: 9.762257
+classification done
+th: 2.896548, vel: 5.419326, best_action: -1.000000, tank: 9.755309
+classification done
+th: 3.226415, vel: 6.540181, best_action: -1.000000, tank: 9.755309
+classification done
+th: 3.600265, vel: 7.413979, best_action: -1.000000, tank: 9.755309
+classification done
+th: 4.033805, vel: 8.595505, best_action: -1.000000, tank: 9.755309
+classification done
+th: 4.464203, vel: 8.533209, best_action: -1.000000, tank: 9.755309
+classification done
+th: 4.863185, vel: 7.910650, best_action: -1.000000, tank: 9.755309
+classification done
+th: 5.233893, vel: 7.350806, best_action: -1.000000, tank: 9.755309
+classification done
+th: 5.595177, vel: 7.163629, best_action: 1.000000, tank: 9.755309
+classification done
+th: 5.749115, vel: 3.052807, best_action: 1.000000, tank: 9.751340
+classification done
+th: 5.711415, vel: -0.747719, best_action: 1.000000, tank: 9.751340
+classification done
+th: 5.431814, vel: -5.539956, best_action: 1.000000, tank: 9.751340
+classification done
+th: 4.891460, vel: -10.714077, best_action: 1.000000, tank: 9.751340
+classification done
+th: 4.068362, vel: -16.310915, best_action: 0.237083, tank: 9.751340
+classification done
+th: 3.075619, vel: -19.650496, best_action: -1.000000, tank: 9.751340
+classification done
+th: 2.287079, vel: -15.628577, best_action: -1.000000, tank: 9.732528
+classification done
+th: 1.775000, vel: -10.154467, best_action: -1.000000, tank: 9.719882
+classification done
+th: 1.652478, vel: -2.429351, best_action: -0.442378, tank: 9.716711
+classification done
+th: 1.831549, vel: 3.548555, best_action: -0.849661, tank: 9.716711
+classification done
+th: 2.246239, vel: 8.218195, best_action: 1.000000, tank: 9.716711
+classification done
+th: 2.664071, vel: 8.289658, best_action: 1.000000, tank: 9.706273
+classification done
+th: 3.015929, vel: 6.976611, best_action: -1.000000, tank: 9.697412
+classification done
+th: 3.411770, vel: 7.848219, best_action: -1.000000, tank: 9.697412
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.201283, vel: 1.184852, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.367787, vel: 3.301296, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.615973, vel: 4.919442, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.908141, vel: 5.792730, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.197168, vel: 5.729428, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.464203, vel: 5.293282, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.693539, vel: 4.546975, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.907168, vel: 4.235641, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.098805, vel: 3.798704, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.281017, vel: 3.612162, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.249601, vel: -0.622828, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.004558, vel: -4.854466, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.470486, vel: -10.586783, best_action: 0.830013, tank: 10.000000
+classification done
+th: 3.669380, vel: -15.861290, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.902832, vel: -15.190000, best_action: -1.000000, tank: 9.981661
+classification done
+th: 2.312212, vel: -11.703780, best_action: -1.000000, tank: 9.967216
+classification done
+th: 2.042035, vel: -5.356725, best_action: -1.000000, tank: 9.960345
+classification done
+th: 2.101726, vel: 1.183936, best_action: -1.000000, tank: 9.960345
+classification done
+th: 2.450442, vel: 6.918292, best_action: 1.000000, tank: 9.960345
+classification done
+th: 2.792876, vel: 6.791225, best_action: -0.450146, tank: 9.951713
+classification done
+th: 3.144734, vel: 6.968044, best_action: -1.000000, tank: 9.951713
+classification done
+th: 3.600265, vel: 9.031502, best_action: -1.000000, tank: 9.951713
+classification done
+th: 4.021238, vel: 8.346513, best_action: -1.000000, tank: 9.951713
+classification done
+th: 4.429646, vel: 8.097373, best_action: -1.000000, tank: 9.951713
+classification done
+th: 4.800354, vel: 7.350067, best_action: -1.000000, tank: 9.951713
+classification done
+th: 5.149071, vel: 6.913917, best_action: -1.000000, tank: 9.951713
+classification done
+th: 5.494645, vel: 6.852148, best_action: 1.000000, tank: 9.951713
+classification done
+th: 5.639159, vel: 2.865571, best_action: 1.000000, tank: 9.947983
+classification done
+th: 5.604601, vel: -0.685390, best_action: 1.000000, tank: 9.947983
+classification done
+th: 5.334424, vel: -5.353439, best_action: 1.000000, tank: 9.947983
+classification done
+th: 4.806637, vel: -10.464494, best_action: 1.000000, tank: 9.947983
+classification done
+th: 3.996106, vel: -16.062527, best_action: -0.269766, tank: 9.947983
+classification done
+th: 3.103894, vel: -17.661621, best_action: -1.000000, tank: 9.944077
+classification done
+th: 2.293363, vel: -16.061880, best_action: -1.000000, tank: 9.924794
+classification done
+th: 1.812699, vel: -9.530174, best_action: -1.000000, tank: 9.912878
+classification done
+th: 1.705885, vel: -2.118361, best_action: -0.405615, tank: 9.910109
+classification done
+th: 1.888097, vel: 3.611169, best_action: -0.446802, tank: 9.910109
+classification done
+th: 2.252522, vel: 7.222197, best_action: 1.000000, tank: 9.910109
+classification done
+th: 2.576106, vel: 6.420064, best_action: 1.000000, tank: 9.901933
+classification done
+th: 2.824292, vel: 4.920999, best_action: -1.000000, tank: 9.895605
+classification done
+th: 3.122743, vel: 5.917193, best_action: -1.000000, tank: 9.895605
+classification done
+th: 3.455752, vel: 6.603779, best_action: -1.000000, tank: 9.895605
+classification done
+th: 3.851593, vel: 7.848375, best_action: -1.000000, tank: 9.895605
+classification done
+th: 4.253716, vel: 7.972796, best_action: -1.000000, tank: 9.895605
+classification done
+th: 4.621283, vel: 7.289218, best_action: -1.000000, tank: 9.895605
+classification done
+th: 4.963717, vel: 6.789071, best_action: -1.000000, tank: 9.895605
+classification done
+th: 5.284159, vel: 6.353451, best_action: -0.279154, tank: 9.895605
+classification done
+th: 5.544911, vel: 5.164330, best_action: 1.000000, tank: 9.895605
+classification done
+th: 5.548053, vel: 0.062312, best_action: 1.000000, tank: 9.895523
+classification done
+th: 5.365840, vel: -3.612028, best_action: 1.000000, tank: 9.895523
+classification done
+th: 4.922876, vel: -8.782532, best_action: 1.000000, tank: 9.895523
+classification done
+th: 4.200309, vel: -14.326406, best_action: 0.404564, tank: 9.895523
+classification done
+th: 3.264115, vel: -18.533733, best_action: -1.000000, tank: 9.895523
+classification done
+th: 2.472434, vel: -15.687730, best_action: -1.000000, tank: 9.876643
+classification done
+th: 1.916372, vel: -11.018984, best_action: -1.000000, tank: 9.862985
+classification done
+th: 1.727876, vel: -3.737397, best_action: -0.354133, tank: 9.858145
+classification done
+th: 1.828407, vel: 1.992172, best_action: -0.459438, tank: 9.858145
+classification done
+th: 2.123717, vel: 5.852468, best_action: 1.000000, tank: 9.858145
+classification done
+th: 2.387610, vel: 5.235365, best_action: 1.000000, tank: 9.851429
+classification done
+th: 2.610663, vel: 4.422495, best_action: 0.244857, tank: 9.845725
+classification done
+th: 2.752035, vel: 2.799939, best_action: -1.000000, tank: 9.844877
+classification done
+th: 3.028495, vel: 5.482493, best_action: -1.000000, tank: 9.844877
+classification done
+th: 3.361504, vel: 6.602475, best_action: -1.000000, tank: 9.844877
+classification done
+th: 3.766770, vel: 8.034761, best_action: -1.000000, tank: 9.844877
+classification done
+th: 4.187743, vel: 8.345851, best_action: -1.000000, tank: 9.844877
+classification done
+th: 4.580442, vel: 7.785781, best_action: -1.000000, tank: 9.844877
+classification done
+th: 4.941725, vel: 7.163052, best_action: -1.000000, tank: 9.844877
+classification done
+th: 5.284159, vel: 6.789349, best_action: -0.651526, tank: 9.844877
+classification done
+th: 5.601460, vel: 6.284926, best_action: 1.000000, tank: 9.844877
+classification done
+th: 5.695707, vel: 1.868949, best_action: 1.000000, tank: 9.842430
+classification done
+th: 5.626593, vel: -1.370589, best_action: 1.000000, tank: 9.842430
+classification done
+th: 5.334424, vel: -5.793892, best_action: 1.000000, tank: 9.842430
+classification done
+th: 4.787787, vel: -10.840802, best_action: 1.000000, tank: 9.842430
+classification done
+th: 3.958407, vel: -16.439007, best_action: -0.367635, tank: 9.842430
+classification done
+th: 3.063053, vel: -17.722759, best_action: -1.000000, tank: 9.836220
+classification done
+th: 2.258805, vel: -15.937061, best_action: -1.000000, tank: 9.817071
+classification done
+th: 1.790708, vel: -9.281750, best_action: -1.000000, tank: 9.805449
+classification done
+th: 1.699602, vel: -1.807265, best_action: -0.436322, tank: 9.803082
+classification done
+th: 1.897522, vel: 3.922239, best_action: -0.431711, tank: 9.803082
+classification done
+th: 2.277655, vel: 7.533797, best_action: 1.000000, tank: 9.803082
+classification done
+th: 2.610663, vel: 6.607055, best_action: 1.000000, tank: 9.794678
+classification done
+th: 2.865133, vel: 5.045487, best_action: -1.000000, tank: 9.788195
+classification done
+th: 3.166725, vel: 5.979476, best_action: -1.000000, tank: 9.788195
+classification done
+th: 3.496593, vel: 6.540316, best_action: -1.000000, tank: 9.788195
+classification done
+th: 3.886150, vel: 7.724256, best_action: -1.000000, tank: 9.788195
+classification done
+th: 4.272566, vel: 7.661354, best_action: -1.000000, tank: 9.788195
+classification done
+th: 4.630708, vel: 7.099932, best_action: -1.000000, tank: 9.788195
+classification done
+th: 4.957433, vel: 6.477883, best_action: -1.000000, tank: 9.788195
+classification done
+th: 5.265309, vel: 6.103939, best_action: -0.385161, tank: 9.788195
+classification done
+th: 5.519778, vel: 5.040586, best_action: 1.000000, tank: 9.788195
+classification done
+th: 5.522920, vel: 0.062309, best_action: 1.000000, tank: 9.788113
+classification done
+th: 5.334424, vel: -3.736518, best_action: 1.000000, tank: 9.788113
+classification done
+th: 4.885177, vel: -8.907275, best_action: 1.000000, tank: 9.788113
+classification done
+th: 4.153185, vel: -14.513558, best_action: 0.203664, tank: 9.788113
+classification done
+th: 3.232699, vel: -18.220240, best_action: -1.000000, tank: 9.788113
+classification done
+th: 2.463009, vel: -15.253171, best_action: -1.000000, tank: 9.769706
+classification done
+th: 1.935221, vel: -10.458902, best_action: -1.000000, tank: 9.756697
+classification done
+th: 1.768717, vel: -3.301628, best_action: -0.352144, tank: 9.752410
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.474503, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.207566, vel: 1.309617, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.402345, vel: 3.862204, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.685088, vel: 5.605096, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.014956, vel: 6.538890, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.338540, vel: 6.414338, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.636991, vel: 5.916011, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.904027, vel: 5.293291, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.149071, vel: 4.857555, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.378407, vel: 4.546434, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.387832, vel: 0.186855, best_action: 1.000000, tank: 9.999753
+classification done
+th: 5.183628, vel: -4.047082, best_action: 1.000000, tank: 9.999753
+classification done
+th: 4.696681, vel: -9.654560, best_action: 1.000000, tank: 9.999753
+classification done
+th: 3.917566, vel: -15.443621, best_action: -0.746450, tank: 9.999753
+classification done
+th: 3.116460, vel: -15.858460, best_action: -1.000000, tank: 9.986001
+classification done
+th: 2.444159, vel: -13.322385, best_action: -1.000000, tank: 9.969725
+classification done
+th: 2.095442, vel: -6.911030, best_action: -1.000000, tank: 9.960939
+classification done
+th: 2.089159, vel: -0.124641, best_action: -1.000000, tank: 9.960774
+classification done
+th: 2.387610, vel: 5.920123, best_action: 1.000000, tank: 9.960774
+classification done
+th: 2.704911, vel: 6.293278, best_action: 0.244903, tank: 9.952751
+classification done
+th: 3.015929, vel: 6.161573, best_action: -1.000000, tank: 9.951045
+classification done
+th: 3.436902, vel: 8.346352, best_action: -1.000000, tank: 9.951045
+classification done
+th: 3.861017, vel: 8.408644, best_action: -1.000000, tank: 9.951045
+classification done
+th: 4.297699, vel: 8.658131, best_action: -1.000000, tank: 9.951045
+classification done
+th: 4.706106, vel: 8.097213, best_action: -1.000000, tank: 9.951045
+classification done
+th: 5.083097, vel: 7.474637, best_action: -1.000000, tank: 9.951045
+classification done
+th: 5.444380, vel: 7.163487, best_action: 1.000000, tank: 9.951045
+classification done
+th: 5.576327, vel: 2.616378, best_action: 1.000000, tank: 9.947635
+classification done
+th: 5.491504, vel: -1.682122, best_action: 1.000000, tank: 9.947635
+classification done
+th: 5.136504, vel: -7.039191, best_action: 1.000000, tank: 9.947635
+classification done
+th: 4.505044, vel: -12.520020, best_action: 1.000000, tank: 9.947635
+classification done
+th: 3.597123, vel: -17.992165, best_action: -1.000000, tank: 9.947635
+classification done
+th: 2.739469, vel: -16.995378, best_action: -1.000000, tank: 9.927353
+classification done
+th: 2.095442, vel: -12.762346, best_action: -1.000000, tank: 9.911706
+classification done
+th: 1.815841, vel: -5.544133, best_action: -1.000000, tank: 9.904604
+classification done
+th: 1.903805, vel: 1.744982, best_action: -0.399171, tank: 9.904604
+classification done
+th: 2.246239, vel: 6.786911, best_action: 1.000000, tank: 9.904604
+classification done
+th: 2.550973, vel: 6.046554, best_action: 1.000000, tank: 9.896887
+classification done
+th: 2.805442, vel: 5.045792, best_action: -1.000000, tank: 9.890404
+classification done
+th: 3.129026, vel: 6.415477, best_action: -1.000000, tank: 9.890404
+classification done
+th: 3.499734, vel: 7.349625, best_action: -1.000000, tank: 9.890404
+classification done
+th: 3.939557, vel: 8.719725, best_action: -1.000000, tank: 9.890404
+classification done
+th: 4.385664, vel: 8.844830, best_action: -1.000000, tank: 9.890404
+classification done
+th: 4.797212, vel: 8.159648, best_action: -1.000000, tank: 9.890404
+classification done
+th: 5.177345, vel: 7.536344, best_action: -1.000000, tank: 9.890404
+classification done
+th: 5.548053, vel: 7.350650, best_action: 1.000000, tank: 9.890404
+classification done
+th: 5.711415, vel: 3.239584, best_action: 1.000000, tank: 9.886196
+classification done
+th: 5.686283, vel: -0.498426, best_action: 1.000000, tank: 9.886196
+classification done
+th: 5.419247, vel: -5.292862, best_action: 1.000000, tank: 9.886196
+classification done
+th: 4.891460, vel: -10.464494, best_action: 1.000000, tank: 9.886196
+classification done
+th: 4.084070, vel: -16.001541, best_action: 0.237083, tank: 9.886196
+classification done
+th: 3.103894, vel: -19.403292, best_action: -1.000000, tank: 9.886196
+classification done
+th: 2.312212, vel: -15.688353, best_action: -1.000000, tank: 9.867316
+classification done
+th: 1.790708, vel: -10.340949, best_action: -1.000000, tank: 9.854452
+classification done
+th: 1.658761, vel: -2.616230, best_action: -0.436322, tank: 9.851042
+classification done
+th: 1.831549, vel: 3.424114, best_action: -0.690497, tank: 9.851042
+classification done
+th: 2.221106, vel: 7.720737, best_action: 1.000000, tank: 9.851042
+classification done
+th: 2.601239, vel: 7.542020, best_action: 1.000000, tank: 9.841502
+classification done
+th: 2.918540, vel: 6.291402, best_action: -1.000000, tank: 9.833479
+classification done
+th: 3.279823, vel: 7.162914, best_action: -1.000000, tank: 9.833479
+classification done
+th: 3.666239, vel: 7.661211, best_action: -1.000000, tank: 9.833479
+classification done
+th: 4.096637, vel: 8.533378, best_action: -1.000000, tank: 9.833479
+classification done
+th: 4.514469, vel: 8.284069, best_action: -1.000000, tank: 9.833479
+classification done
+th: 4.897743, vel: 7.598463, best_action: -1.000000, tank: 9.833479
+classification done
+th: 5.252743, vel: 7.038214, best_action: -1.000000, tank: 9.833479
+classification done
+th: 5.607743, vel: 7.039172, best_action: 1.000000, tank: 9.833479
+classification done
+th: 5.767964, vel: 3.177288, best_action: 1.000000, tank: 9.829351
+classification done
+th: 5.745973, vel: -0.436152, best_action: 1.000000, tank: 9.829351
+classification done
+th: 5.497787, vel: -4.918667, best_action: 1.000000, tank: 9.829351
+classification done
+th: 4.998274, vel: -9.905079, best_action: 1.000000, tank: 9.829351
+classification done
+th: 4.222301, vel: -15.383781, best_action: 0.780411, tank: 9.829351
+classification done
+th: 3.210707, vel: -20.025993, best_action: -1.000000, tank: 9.829351
+classification done
+th: 2.337345, vel: -17.313507, best_action: -1.000000, tank: 9.808741
+classification done
+th: 1.731018, vel: -12.022432, best_action: -1.000000, tank: 9.793941
+classification done
+th: 1.514248, vel: -4.298347, best_action: -0.459130, tank: 9.788393
+classification done
+th: 1.595929, vel: 1.618609, best_action: -1.000000, tank: 9.788393
+classification done
+th: 1.950929, vel: 7.044208, best_action: 1.000000, tank: 9.788393
+classification done
+th: 2.359336, vel: 8.103954, best_action: 1.000000, tank: 9.778179
+classification done
+th: 2.736327, vel: 7.474943, best_action: 0.670733, tank: 9.768715
+classification done
+th: 2.984513, vel: 4.915253, best_action: -1.000000, tank: 9.764532
+classification done
+th: 3.308097, vel: 6.417131, best_action: -1.000000, tank: 9.764532
+classification done
+th: 3.653672, vel: 6.851759, best_action: -1.000000, tank: 9.764532
+classification done
+th: 4.049513, vel: 7.848063, best_action: -1.000000, tank: 9.764532
+classification done
+th: 4.435929, vel: 7.661207, best_action: -1.000000, tank: 9.764532
+classification done
+th: 4.787787, vel: 6.976062, best_action: -1.000000, tank: 9.764532
+classification done
+th: 5.114513, vel: 6.477893, best_action: -1.000000, tank: 9.764532
+classification done
+th: 5.425530, vel: 6.166945, best_action: 1.000000, tank: 9.764532
+classification done
+th: 5.510354, vel: 1.681764, best_action: 1.000000, tank: 9.762327
+classification done
+th: 5.378407, vel: -2.616647, best_action: 1.000000, tank: 9.762327
+classification done
+th: 4.979424, vel: -7.911601, best_action: 1.000000, tank: 9.762327
+classification done
+th: 4.294557, vel: -13.580824, best_action: 0.679475, tank: 9.762327
+classification done
+th: 3.374071, vel: -18.220961, best_action: -1.000000, tank: 9.762327
+classification done
+th: 2.569823, vel: -15.937061, best_action: -1.000000, tank: 9.743178
+classification done
+th: 2.001194, vel: -11.268223, best_action: -1.000000, tank: 9.729233
+classification done
+th: 1.803274, vel: -3.924499, best_action: -1.000000, tank: 9.724156
+classification done
+th: 1.960354, vel: 3.115919, best_action: -0.421819, tank: 9.724156
+classification done
+th: 2.365619, vel: 8.031263, best_action: 1.000000, tank: 9.724156
+classification done
+th: 2.723761, vel: 7.102880, best_action: 0.576232, tank: 9.715145
+classification done
+th: 3.041062, vel: 6.284060, best_action: -1.000000, tank: 9.710650
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.276681, vel: 2.681492, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.468318, vel: 3.798860, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.744779, vel: 5.479998, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.071504, vel: 6.476480, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.388805, vel: 6.291032, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.684115, vel: 5.853751, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.944867, vel: 5.168732, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.183628, vel: 4.733939, best_action: -0.597688, tank: 10.000000
+classification done
+th: 5.368982, vel: 3.670662, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.293583, vel: -1.494785, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.001415, vel: -5.792045, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.413938, vel: -11.648214, best_action: 0.797253, tank: 10.000000
+classification done
+th: 3.565708, vel: -16.791975, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.802301, vel: -15.126554, best_action: -1.000000, tank: 9.981729
+classification done
+th: 2.246239, vel: -11.018984, best_action: -1.000000, tank: 9.968070
+classification done
+th: 2.038894, vel: -4.111378, best_action: -1.000000, tank: 9.962758
+classification done
+th: 2.177124, vel: 2.741790, best_action: -1.000000, tank: 9.962758
+classification done
+th: 2.604380, vel: 8.476304, best_action: 1.000000, tank: 9.962758
+classification done
+th: 3.022212, vel: 8.286370, best_action: -1.000000, tank: 9.952320
+classification done
+th: 3.556283, vel: 10.590754, best_action: -1.000000, tank: 9.952320
+classification done
+th: 4.077787, vel: 10.335421, best_action: -1.000000, tank: 9.952320
+classification done
+th: 4.589867, vel: 10.147618, best_action: -1.000000, tank: 9.952320
+classification done
+th: 5.067389, vel: 9.462634, best_action: -1.000000, tank: 9.952320
+classification done
+th: 5.519778, vel: 8.970282, best_action: 1.000000, tank: 9.952320
+classification done
+th: 5.745973, vel: 4.485857, best_action: 1.000000, tank: 9.946538
+classification done
+th: 5.774247, vel: 0.560726, best_action: 1.000000, tank: 9.945798
+classification done
+th: 5.560619, vel: -4.233449, best_action: 1.000000, tank: 9.945798
+classification done
+th: 5.092522, vel: -9.283775, best_action: 1.000000, tank: 9.945798
+classification done
+th: 4.347964, vel: -14.763590, best_action: 1.000000, tank: 9.945798
+classification done
+th: 3.342655, vel: -19.922506, best_action: -1.000000, tank: 9.945798
+classification done
+th: 2.441017, vel: -17.871191, best_action: -1.000000, tank: 9.924598
+classification done
+th: 1.803274, vel: -12.637838, best_action: -1.000000, tank: 9.909091
+classification done
+th: 1.555088, vel: -4.921101, best_action: -0.424753, tank: 9.902763
+classification done
+th: 1.605354, vel: 0.996282, best_action: -1.000000, tank: 9.902763
+classification done
+th: 1.935221, vel: 6.540056, best_action: 1.000000, tank: 9.902763
+classification done
+th: 2.324779, vel: 7.730082, best_action: 1.000000, tank: 9.892999
+classification done
+th: 2.695487, vel: 7.355172, best_action: 0.991859, tank: 9.883685
+classification done
+th: 2.918540, vel: 4.418641, best_action: -1.000000, tank: 9.878029
+classification done
+th: 3.198141, vel: 5.543915, best_action: -1.000000, tank: 9.878029
+classification done
+th: 3.524867, vel: 6.477893, best_action: -1.000000, tank: 9.878029
+classification done
+th: 3.926991, vel: 7.972796, best_action: -1.000000, tank: 9.878029
+classification done
+th: 4.341681, vel: 8.221946, best_action: -1.000000, tank: 9.878029
+classification done
+th: 4.731239, vel: 7.723958, best_action: -1.000000, tank: 9.878029
+classification done
+th: 5.089380, vel: 7.100768, best_action: -1.000000, tank: 9.878029
+classification done
+th: 5.425530, vel: 6.665282, best_action: 1.000000, tank: 9.878029
+classification done
+th: 5.526062, vel: 1.993439, best_action: 1.000000, tank: 9.875421
+classification done
+th: 5.406681, vel: -2.367721, best_action: 1.000000, tank: 9.875421
+classification done
+th: 5.020265, vel: -7.662271, best_action: 1.000000, tank: 9.875421
+classification done
+th: 4.344823, vel: -13.393394, best_action: 0.980541, tank: 9.875421
+classification done
+th: 3.402345, vel: -18.659609, best_action: -1.000000, tank: 9.875421
+classification done
+th: 2.554115, vel: -16.808943, best_action: -1.000000, tank: 9.855338
+classification done
+th: 1.947787, vel: -12.014815, best_action: -1.000000, tank: 9.840537
+classification done
+th: 1.731018, vel: -4.298856, best_action: -0.351826, tank: 9.834990
+classification done
+th: 1.812699, vel: 1.618703, best_action: -0.458843, tank: 9.834990
+classification done
+th: 2.101726, vel: 5.728518, best_action: 1.000000, tank: 9.834990
+classification done
+th: 2.384469, vel: 5.609539, best_action: 1.000000, tank: 9.827810
+classification done
+th: 2.642080, vel: 5.108183, best_action: 0.292301, tank: 9.821250
+classification done
+th: 2.836858, vel: 3.857992, best_action: -1.000000, tank: 9.819871
+classification done
+th: 3.173009, vel: 6.664763, best_action: -1.000000, tank: 9.819871
+classification done
+th: 3.562566, vel: 7.723489, best_action: -1.000000, tank: 9.819871
+classification done
+th: 4.018097, vel: 9.031859, best_action: -1.000000, tank: 9.819871
+classification done
+th: 4.470486, vel: 8.969393, best_action: -1.000000, tank: 9.819871
+classification done
+th: 4.894601, vel: 8.408811, best_action: -1.000000, tank: 9.819871
+classification done
+th: 5.287301, vel: 7.785781, best_action: -1.000000, tank: 9.819871
+classification done
+th: 5.673716, vel: 7.661805, best_action: 1.000000, tank: 9.819871
+classification done
+th: 5.865354, vel: 3.800522, best_action: 1.000000, tank: 9.814952
+classification done
+th: 5.877920, vel: 0.249199, best_action: 1.000000, tank: 9.814623
+classification done
+th: 5.673716, vel: -4.047483, best_action: 1.000000, tank: 9.814623
+classification done
+th: 5.233893, vel: -8.722141, best_action: 1.000000, tank: 9.814623
+classification done
+th: 4.527035, vel: -14.014953, best_action: 1.000000, tank: 9.814623
+classification done
+th: 3.546858, vel: -19.424070, best_action: -1.000000, tank: 9.814623
+classification done
+th: 2.642080, vel: -17.928827, best_action: -1.000000, tank: 9.793356
+classification done
+th: 1.969778, vel: -13.323977, best_action: -1.000000, tank: 9.777080
+classification done
+th: 1.683894, vel: -5.668605, best_action: -1.000000, tank: 9.769823
+classification done
+th: 1.771858, vel: 1.744950, best_action: -0.490704, tank: 9.769823
+classification done
+th: 2.139425, vel: 7.284453, best_action: 1.000000, tank: 9.769823
+classification done
+th: 2.494425, vel: 7.042953, best_action: 1.000000, tank: 9.760887
+classification done
+th: 2.811725, vel: 6.291282, best_action: -0.937198, tank: 9.752864
+classification done
+th: 3.201283, vel: 7.714933, best_action: -1.000000, tank: 9.752864
+classification done
+th: 3.625398, vel: 8.408968, best_action: -1.000000, tank: 9.752864
+classification done
+th: 4.106062, vel: 9.530177, best_action: -1.000000, tank: 9.752864
+classification done
+th: 4.577301, vel: 9.341817, best_action: -1.000000, tank: 9.752864
+classification done
+th: 5.010840, vel: 8.595672, best_action: -1.000000, tank: 9.752864
+classification done
+th: 5.419247, vel: 8.097845, best_action: 0.511720, tank: 9.752864
+classification done
+th: 5.645442, vel: 4.480180, best_action: 1.000000, tank: 9.749981
+classification done
+th: 5.689425, vel: 0.872313, best_action: 1.000000, tank: 9.748833
+classification done
+th: 5.472654, vel: -4.295200, best_action: 1.000000, tank: 9.748833
+classification done
+th: 4.998274, vel: -9.406526, best_action: 1.000000, tank: 9.748833
+classification done
+th: 4.234867, vel: -15.134647, best_action: 0.780411, tank: 9.748833
+classification done
+th: 3.242124, vel: -19.650894, best_action: -1.000000, tank: 9.748833
+classification done
+th: 2.390752, vel: -16.874552, best_action: -1.000000, tank: 9.728684
+classification done
+th: 1.803274, vel: -11.641290, best_action: -1.000000, tank: 9.714311
+classification done
+th: 1.605354, vel: -3.924579, best_action: -0.424753, tank: 9.709234
+classification done
+th: 1.702743, vel: 1.929727, best_action: -1.000000, tank: 9.709234
+classification done
+th: 2.067168, vel: 7.229647, best_action: 1.000000, tank: 9.709234
+classification done
+th: 2.478716, vel: 8.164832, best_action: 1.000000, tank: 9.698946
+classification done
+th: 2.852566, vel: 7.412655, best_action: -0.771855, tank: 9.689557
+classification done
+th: 3.267256, vel: 8.213310, best_action: -1.000000, tank: 9.689557
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.207566, vel: 1.309565, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.383495, vel: 3.488584, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.637964, vel: 5.045583, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.939557, vel: 5.978405, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.234867, vel: 5.853872, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.508185, vel: 5.417822, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.743805, vel: 4.670636, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.963717, vel: 4.359260, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.161636, vel: 3.923322, best_action: -0.277086, tank: 10.000000
+classification done
+th: 5.284159, vel: 2.426435, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.136504, vel: -2.927523, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.775221, vel: -7.162483, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.118628, vel: -13.016014, best_action: -0.423198, tank: 10.000000
+classification done
+th: 3.370929, vel: -14.802999, best_action: -1.000000, tank: 9.993389
+classification done
+th: 2.667212, vel: -13.946580, best_action: -1.000000, tank: 9.976419
+classification done
+th: 2.249380, vel: -8.279797, best_action: -1.000000, tank: 9.965981
+classification done
+th: 2.155133, vel: -1.869403, best_action: -1.000000, tank: 9.963534
+classification done
+th: 2.365619, vel: 4.175830, best_action: 0.369667, tank: 9.963534
+classification done
+th: 2.657787, vel: 5.786763, best_action: 0.575723, tank: 9.960958
+classification done
+th: 2.968805, vel: 6.159865, best_action: -1.000000, tank: 9.956552
+classification done
+th: 3.352080, vel: 7.598774, best_action: -1.000000, tank: 9.956552
+classification done
+th: 3.744779, vel: 7.786085, best_action: -1.000000, tank: 9.956552
+classification done
+th: 4.159469, vel: 8.221777, best_action: -1.000000, tank: 9.956552
+classification done
+th: 4.552168, vel: 7.785936, best_action: -1.000000, tank: 9.956552
+classification done
+th: 4.907168, vel: 7.038623, best_action: -1.000000, tank: 9.956552
+classification done
+th: 5.243319, vel: 6.664763, best_action: -1.000000, tank: 9.956552
+classification done
+th: 5.582610, vel: 6.728362, best_action: 1.000000, tank: 9.956552
+classification done
+th: 5.733407, vel: 2.990815, best_action: 1.000000, tank: 9.952662
+classification done
+th: 5.708274, vel: -0.498466, best_action: 1.000000, tank: 9.952662
+classification done
+th: 5.469513, vel: -4.732438, best_action: 1.000000, tank: 9.952662
+classification done
+th: 4.982565, vel: -9.655910, best_action: 1.000000, tank: 9.952662
+classification done
+th: 4.219159, vel: -15.134938, best_action: 0.696337, tank: 9.952662
+classification done
+th: 3.223274, vel: -19.712687, best_action: -1.000000, tank: 9.952662
+classification done
+th: 2.362478, vel: -17.059999, best_action: -1.000000, tank: 9.932315
+classification done
+th: 1.753009, vel: -12.078740, best_action: -1.000000, tank: 9.917443
+classification done
+th: 1.536239, vel: -4.298347, best_action: -0.450854, tank: 9.911896
+classification done
+th: 1.624203, vel: 1.743082, best_action: -1.000000, tank: 9.911896
+classification done
+th: 1.985487, vel: 7.168033, best_action: 1.000000, tank: 9.911896
+classification done
+th: 2.384469, vel: 7.915528, best_action: 1.000000, tank: 9.901906
+classification done
+th: 2.742610, vel: 7.101195, best_action: 0.292330, tank: 9.892894
+classification done
+th: 2.990796, vel: 4.915253, best_action: -1.000000, tank: 9.891176
+classification done
+th: 3.336371, vel: 6.852977, best_action: -1.000000, tank: 9.891176
+classification done
+th: 3.691371, vel: 7.040154, best_action: -1.000000, tank: 9.891176
+classification done
+th: 4.074646, vel: 7.600888, best_action: -1.000000, tank: 9.891176
+classification done
+th: 4.442212, vel: 7.287628, best_action: -1.000000, tank: 9.891176
+classification done
+th: 4.778362, vel: 6.665943, best_action: -1.000000, tank: 9.891176
+classification done
+th: 5.086238, vel: 6.105504, best_action: -1.000000, tank: 9.891176
+classification done
+th: 5.384690, vel: 5.917663, best_action: 1.000000, tank: 9.891176
+classification done
+th: 5.463230, vel: 1.557403, best_action: 1.000000, tank: 9.889133
+classification done
+th: 5.328141, vel: -2.678732, best_action: 1.000000, tank: 9.889133
+classification done
+th: 4.929159, vel: -7.910503, best_action: 1.000000, tank: 9.889133
+classification done
+th: 4.241150, vel: -13.645292, best_action: 0.438041, tank: 9.889133
+classification done
+th: 3.336371, vel: -17.911795, best_action: -1.000000, tank: 9.889133
+classification done
+th: 2.563540, vel: -15.314212, best_action: -1.000000, tank: 9.870659
+classification done
+th: 2.016903, vel: -10.833936, best_action: -1.000000, tank: 9.857217
+classification done
+th: 1.828407, vel: -3.737696, best_action: -1.000000, tank: 9.852377
+classification done
+th: 1.985487, vel: 3.116042, best_action: -0.373718, tank: 9.852377
+classification done
+th: 2.378186, vel: 7.781767, best_action: 1.000000, tank: 9.852377
+classification done
+th: 2.708053, vel: 6.540830, best_action: 0.387035, tank: 9.844049
+classification done
+th: 3.006504, vel: 5.911451, best_action: -1.000000, tank: 9.841287
+classification done
+th: 3.392920, vel: 7.661510, best_action: -1.000000, tank: 9.841287
+classification done
+th: 3.776194, vel: 7.599066, best_action: -1.000000, tank: 9.841287
+classification done
+th: 4.175177, vel: 7.910665, best_action: -1.000000, tank: 9.841287
+classification done
+th: 4.552168, vel: 7.474498, best_action: -1.000000, tank: 9.841287
+classification done
+th: 4.894601, vel: 6.789330, best_action: -1.000000, tank: 9.841287
+classification done
+th: 5.215044, vel: 6.353946, best_action: -1.000000, tank: 9.841287
+classification done
+th: 5.538628, vel: 6.415991, best_action: 1.000000, tank: 9.841287
+classification done
+th: 5.664292, vel: 2.492151, best_action: 1.000000, tank: 9.838036
+classification done
+th: 5.614026, vel: -0.996704, best_action: 1.000000, tank: 9.838036
+classification done
+th: 5.325000, vel: -5.727602, best_action: 1.000000, tank: 9.838036
+classification done
+th: 4.778362, vel: -10.839101, best_action: 1.000000, tank: 9.838036
+classification done
+th: 3.948982, vel: -16.437048, best_action: -0.409313, tank: 9.838036
+classification done
+th: 3.063053, vel: -17.538979, best_action: -1.000000, tank: 9.830896
+classification done
+th: 2.271371, vel: -15.687424, best_action: -1.000000, tank: 9.812016
+classification done
+th: 1.818982, vel: -8.969748, best_action: -1.000000, tank: 9.800762
+classification done
+th: 1.743584, vel: -1.495996, best_action: -0.392984, tank: 9.798800
+classification done
+th: 1.947787, vel: 4.046438, best_action: -0.330943, tank: 9.798800
+classification done
+th: 2.321637, vel: 7.408980, best_action: 1.000000, tank: 9.798800
+classification done
+th: 2.635796, vel: 6.234182, best_action: 1.000000, tank: 9.790854
+classification done
+th: 2.871415, vel: 4.671830, best_action: -1.000000, tank: 9.784837
+classification done
+th: 3.157300, vel: 5.668162, best_action: -1.000000, tank: 9.784837
+classification done
+th: 3.477743, vel: 6.353825, best_action: -1.000000, tank: 9.784837
+classification done
+th: 3.861017, vel: 7.599075, best_action: -1.000000, tank: 9.784837
+classification done
+th: 4.250575, vel: 7.722882, best_action: -1.000000, tank: 9.784837
+classification done
+th: 4.614999, vel: 7.225192, best_action: -1.000000, tank: 9.784837
+classification done
+th: 4.944867, vel: 6.540325, best_action: -1.000000, tank: 9.784837
+classification done
+th: 5.255884, vel: 6.166446, best_action: -0.598076, tank: 9.784837
+classification done
+th: 5.532345, vel: 5.475444, best_action: 1.000000, tank: 9.784837
+classification done
+th: 5.566902, vel: 0.685362, best_action: 1.000000, tank: 9.783934
+classification done
+th: 5.416106, vel: -2.988079, best_action: 1.000000, tank: 9.783934
+classification done
+th: 5.004558, vel: -8.160942, best_action: 1.000000, tank: 9.783934
+classification done
+th: 4.313406, vel: -13.704071, best_action: 0.829352, tank: 9.783934
+classification done
+th: 3.370929, vel: -18.656281, best_action: -1.000000, tank: 9.783934
+classification done
+th: 2.519557, vel: -16.871532, best_action: -1.000000, tank: 9.763784
+classification done
+th: 1.903805, vel: -12.204228, best_action: -1.000000, tank: 9.748772
+classification done
+th: 1.665044, vel: -4.734507, best_action: -0.355659, tank: 9.742678
+classification done
+th: 1.727876, vel: 1.245160, best_action: -0.627874, tank: 9.742678
+classification done
+th: 2.010619, vel: 5.603758, best_action: 1.000000, tank: 9.742678
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.210707, vel: 1.371922, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.408628, vel: 3.924659, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.697655, vel: 5.729655, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.033805, vel: 6.663310, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.363672, vel: 6.538751, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.668406, vel: 6.040561, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.941725, vel: 5.419004, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.193053, vel: 4.982021, best_action: -0.651283, tank: 10.000000
+classification done
+th: 5.397256, vel: 4.043876, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.346991, vel: -0.996774, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.083097, vel: -5.227903, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.530177, vel: -10.961508, best_action: 1.000000, tank: 10.000000
+classification done
+th: 3.694513, vel: -16.558947, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.147876, vel: -10.831359, best_action: -1.000000, tank: 9.986557
+classification done
+th: 3.094469, vel: -1.058423, best_action: -1.000000, tank: 9.985164
+classification done
+th: 3.226415, vel: 2.616067, best_action: -1.000000, tank: 9.985164
+classification done
+th: 3.487168, vel: 5.169352, best_action: -1.000000, tank: 9.985164
+classification done
+th: 3.832743, vel: 6.851080, best_action: -1.000000, tank: 9.985164
+classification done
+th: 4.200309, vel: 7.287918, best_action: -1.000000, tank: 9.985164
+classification done
+th: 4.552168, vel: 6.976338, best_action: -1.000000, tank: 9.985164
+classification done
+th: 4.872610, vel: 6.353442, best_action: -1.000000, tank: 9.985164
+classification done
+th: 5.164779, vel: 5.792629, best_action: -1.000000, tank: 9.985164
+classification done
+th: 5.444380, vel: 5.543910, best_action: 1.000000, tank: 9.985164
+classification done
+th: 5.504070, vel: 1.183504, best_action: 1.000000, tank: 9.983607
+classification done
+th: 5.350132, vel: -3.052757, best_action: 1.000000, tank: 9.983607
+classification done
+th: 4.929159, vel: -8.346839, best_action: 1.000000, tank: 9.983607
+classification done
+th: 4.649557, vel: -5.544250, best_action: 0.438041, tank: 9.983607
+classification done
+th: 4.819203, vel: 3.359855, best_action: -0.921600, tank: 9.981744
+classification done
+th: 4.988849, vel: 3.360064, best_action: -1.000000, tank: 9.981744
+classification done
+th: 5.199336, vel: 4.173585, best_action: 0.158542, tank: 9.981744
+classification done
+th: 5.438097, vel: 4.729532, best_action: 1.000000, tank: 9.980923
+classification done
+th: 5.535486, vel: 1.931148, best_action: 1.000000, tank: 9.978395
+classification done
+th: 5.551194, vel: 0.311499, best_action: 1.000000, tank: 9.977983
+classification done
+th: 5.532345, vel: -0.373691, best_action: 1.000000, tank: 9.977983
+classification done
+th: 5.664292, vel: 2.615350, best_action: 1.000000, tank: 9.974573
+classification done
+th: 5.752256, vel: 1.744419, best_action: 1.000000, tank: 9.972287
+classification done
+th: 5.764823, vel: 0.249227, best_action: 1.000000, tank: 9.971958
+classification done
+th: 5.789956, vel: 0.498170, best_action: 1.000000, tank: 9.971300
+classification done
+th: 6.003584, vel: 4.234540, best_action: 1.000000, tank: 9.965831
+classification done
+th: 6.188938, vel: 3.675904, best_action: 0.584035, tank: 9.961070
+classification done
+th: 0.072257, vel: -121.163177, best_action: -0.448339, tank: 9.961070
+classification done
+th: 0.248186, vel: 3.494606, best_action: 0.344435, tank: 9.961070
+classification done
+th: 0.292168, vel: 0.872107, best_action: -1.000000, tank: 9.960678
+classification done
+th: 0.210487, vel: -1.620049, best_action: -1.000000, tank: 9.958554
+classification done
+th: 0.223054, vel: 0.249215, best_action: 0.153465, tank: 9.958554
+classification done
+th: 0.197920, vel: -0.498588, best_action: -0.433519, tank: 9.958554
+classification done
+th: 0.210487, vel: 0.249259, best_action: -0.065664, tank: 9.958554
+classification done
+th: 0.185354, vel: -0.498469, best_action: -0.413718, tank: 9.958513
+classification done
+th: 0.163363, vel: -0.436247, best_action: -0.045396, tank: 9.958276
+classification done
+th: 0.125663, vel: -0.747639, best_action: -0.026771, tank: 9.958235
+classification done
+th: 0.075398, vel: -0.996720, best_action: 0.086353, tank: 9.958207
+classification done
+th: 0.043982, vel: -0.622895, best_action: 0.210116, tank: 9.958207
+classification done
+th: 6.267478, vel: 123.413490, best_action: 0.136857, tank: 9.958207
+classification done
+th: 6.248628, vel: -0.374057, best_action: -0.569212, tank: 9.958207
+classification done
+th: 6.273760, vel: 0.498150, best_action: 0.297201, tank: 9.958207
+classification done
+th: 6.276902, vel: 0.062267, best_action: -0.087107, tank: 9.958182
+classification done
+th: 0.012566, vel: -124.188889, best_action: -0.012173, tank: 9.958182
+classification done
+th: 0.031416, vel: 0.374433, best_action: 0.402239, tank: 9.958182
+classification done
+th: 0.031416, vel: 0.000000, best_action: -0.168226, tank: 9.958182
+classification done
+th: 0.031416, vel: 0.000000, best_action: -0.027192, tank: 9.958182
+classification done
+th: 0.034557, vel: 0.062405, best_action: -0.027192, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.062337, best_action: -0.050050, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.052705, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.047124, vel: 0.187222, best_action: -0.032912, tank: 9.958182
+classification done
+th: 0.062832, vel: 0.311559, best_action: -0.153265, tank: 9.958182
+classification done
+th: 0.081681, vel: 0.373846, best_action: -0.212615, tank: 9.958182
+classification done
+th: 0.087965, vel: 0.124622, best_action: -0.238569, tank: 9.958182
+classification done
+th: 0.094248, vel: 0.124649, best_action: -0.154587, tank: 9.958182
+classification done
+th: 0.113098, vel: 0.373983, best_action: -0.162424, tank: 9.958182
+classification done
+th: 0.153938, vel: 0.810186, best_action: -0.274404, tank: 9.958182
+classification done
+th: 0.229336, vel: 1.495247, best_action: -0.463852, tank: 9.958182
+classification done
+th: 0.392699, vel: 3.239018, best_action: -1.000000, tank: 9.958182
+classification done
+th: 0.512080, vel: 2.367214, best_action: -1.000000, tank: 9.958182
+classification done
+th: 0.518362, vel: 0.124604, best_action: -1.000000, tank: 9.958182
+classification done
+th: 0.499513, vel: -0.374031, best_action: -1.000000, tank: 9.957688
+classification done
+th: 0.446106, vel: -1.059706, best_action: -1.000000, tank: 9.956295
+classification done
+th: 0.380133, vel: -1.308036, best_action: -0.578001, tank: 9.954576
+classification done
+th: 0.292168, vel: -1.744086, best_action: -0.290139, tank: 9.953265
+classification done
+th: 0.182212, vel: -2.180143, best_action: 0.031709, tank: 9.952464
+classification done
+th: 0.087965, vel: -1.868881, best_action: 0.221253, tank: 9.952464
+classification done
+th: 0.012566, vel: -1.494842, best_action: 0.299392, tank: 9.952464
+classification done
+th: 6.264336, vel: 123.942207, best_action: 0.341837, tank: 9.952464
+classification done
+th: 6.264336, vel: 0.000000, best_action: -0.562627, tank: 9.952464
+classification done
+th: 0.009425, vel: -124.117676, best_action: 0.045577, tank: 9.952464
+classification done
+th: 0.050266, vel: 0.811296, best_action: 0.405193, tank: 9.952420
+classification done
+th: 0.053407, vel: 0.062290, best_action: -0.298212, tank: 9.952387
+classification done
+th: 0.053407, vel: 0.000000, best_action: -0.066003, tank: 9.952387
+classification done
+th: 0.056548, vel: 0.062402, best_action: -0.044446, tank: 9.952387
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.473259, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.216991, vel: 1.496560, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.446327, vel: 4.546263, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.867300, vel: 8.347009, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.530177, vel: 13.139794, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.469513, vel: 18.612144, best_action: -1.000000, tank: 10.000000
+classification done
+th: 0.345575, vel: -101.536499, best_action: 1.000000, tank: 9.945163
+classification done
+th: 1.300620, vel: 18.974901, best_action: 0.064324, tank: 9.922868
+classification done
+th: 2.026327, vel: 14.369310, best_action: 1.000000, tank: 9.922868
+classification done
+th: 2.475575, vel: 8.907290, best_action: 1.000000, tank: 9.911688
+classification done
+th: 2.613805, vel: 2.740263, best_action: -0.737016, tank: 9.908117
+classification done
+th: 2.695487, vel: 1.617643, best_action: -1.000000, tank: 9.908117
+classification done
+th: 2.745752, vel: 0.996423, best_action: -1.000000, tank: 9.908117
+classification done
+th: 2.883982, vel: 2.737875, best_action: -1.000000, tank: 9.908117
+classification done
+th: 3.141593, vel: 5.106057, best_action: -1.000000, tank: 9.908117
+classification done
+th: 3.540576, vel: 7.907386, best_action: -1.000000, tank: 9.908117
+classification done
+th: 4.146902, vel: 12.017885, best_action: -1.000000, tank: 9.908117
+classification done
+th: 5.010840, vel: 17.119545, best_action: -1.000000, tank: 9.908117
+classification done
+th: 6.138671, vel: 22.347456, best_action: 0.511712, tank: 9.908117
+classification done
+th: 0.907921, vel: -103.778564, best_action: -0.350166, tank: 9.908117
+classification done
+th: 1.815841, vel: 18.023954, best_action: -1.000000, tank: 9.908117
+classification done
+th: 2.695486, vel: 17.442533, best_action: 1.000000, tank: 9.908117
+classification done
+th: 3.317522, vel: 12.324388, best_action: -1.000000, tank: 9.892962
+classification done
+th: 4.087212, vel: 15.249238, best_action: -1.000000, tank: 9.892962
+classification done
+th: 5.026548, vel: 18.615463, best_action: -1.000000, tank: 9.892962
+classification done
+th: 6.220354, vel: 23.657986, best_action: 0.772660, tank: 9.892962
+classification done
+th: 1.014735, vel: -103.277901, best_action: -0.472315, tank: 9.892962
+classification done
+th: 1.925796, vel: 18.084503, best_action: -1.000000, tank: 9.892962
+classification done
+th: 2.824293, vel: 17.812128, best_action: 1.000000, tank: 9.892962
+classification done
+th: 3.487169, vel: 13.134058, best_action: -1.000000, tank: 9.876895
+classification done
+th: 4.316549, vel: 16.430859, best_action: -1.000000, tank: 9.876895
+classification done
+th: 5.328142, vel: 20.042248, best_action: -1.000000, tank: 9.876895
+classification done
+th: 0.285883, vel: -99.929817, best_action: 1.000000, tank: 9.821692
+classification done
+th: 1.325751, vel: 20.663883, best_action: 0.128981, tank: 9.797686
+classification done
+th: 2.133141, vel: 15.992343, best_action: 1.000000, tank: 9.796929
+classification done
+th: 2.667211, vel: 10.588653, best_action: 1.000000, tank: 9.783776
+classification done
+th: 2.915399, vel: 4.917326, best_action: -1.000000, tank: 9.777449
+classification done
+th: 3.176150, vel: 5.168303, best_action: -1.000000, tank: 9.777449
+classification done
+th: 3.502875, vel: 6.476086, best_action: -1.000000, tank: 9.777449
+classification done
+th: 4.033807, vel: 10.523506, best_action: -1.000000, tank: 9.777449
+classification done
+th: 4.822343, vel: 15.622629, best_action: -1.000000, tank: 9.777449
+classification done
+th: 5.884203, vel: 21.039015, best_action: -1.000000, tank: 9.777449
+classification done
+th: 0.819955, vel: -100.377548, best_action: 1.000000, tank: 9.722351
+classification done
+th: 1.774999, vel: 18.963953, best_action: -1.000000, tank: 9.700054
+classification done
+th: 2.670356, vel: 17.754095, best_action: 1.000000, tank: 9.700054
+classification done
+th: 3.295530, vel: 12.387288, best_action: -1.000000, tank: 9.684829
+classification done
+th: 4.065219, vel: 15.249531, best_action: -1.000000, tank: 9.684829
+classification done
+th: 5.001417, vel: 18.548845, best_action: -1.000000, tank: 9.684829
+classification done
+th: 6.198360, vel: 23.716415, best_action: 0.354121, tank: 9.684829
+classification done
+th: 1.036724, vel: -102.403259, best_action: -0.454666, tank: 9.684829
+classification done
+th: 2.029469, vel: 19.707888, best_action: -1.000000, tank: 9.684829
+classification done
+th: 3.012785, vel: 19.497858, best_action: 1.000000, tank: 9.684829
+classification done
+th: 3.791903, vel: 15.436319, best_action: -1.000000, tank: 9.666219
+classification done
+th: 4.768938, vel: 19.357578, best_action: -1.000000, tank: 9.666219
+classification done
+th: 5.931324, vel: 23.028498, best_action: -1.000000, tank: 9.666219
+classification done
+th: 0.951903, vel: -98.902031, best_action: 1.000000, tank: 9.610919
+classification done
+th: 1.979202, vel: 20.394236, best_action: -1.000000, tank: 9.587160
+classification done
+th: 2.959381, vel: 19.436825, best_action: 1.000000, tank: 9.587160
+classification done
+th: 3.710222, vel: 14.875501, best_action: -1.000000, tank: 9.569160
+classification done
+th: 4.652700, vel: 18.673279, best_action: -1.000000, tank: 9.569160
+classification done
+th: 5.783670, vel: 22.407869, best_action: -1.000000, tank: 9.569160
+classification done
+th: 0.797964, vel: -99.026871, best_action: 1.000000, tank: 9.513886
+classification done
+th: 1.831547, vel: 20.519821, best_action: -1.000000, tank: 9.490003
+classification done
+th: 2.805442, vel: 19.311428, best_action: 1.000000, tank: 9.490003
+classification done
+th: 3.521726, vel: 14.191987, best_action: -1.000000, tank: 9.472756
+classification done
+th: 4.413940, vel: 17.677065, best_action: -1.000000, tank: 9.472756
+classification done
+th: 5.488362, vel: 21.285788, best_action: -1.000000, tank: 9.472756
+classification done
+th: 0.490090, vel: -99.044327, best_action: 1.000000, tank: 9.417356
+classification done
+th: 1.542520, vel: 20.912672, best_action: -0.202229, tank: 9.393101
+classification done
+th: 2.381326, vel: 16.614632, best_action: 1.000000, tank: 9.393101
+classification done
+th: 2.993934, vel: 12.139023, best_action: 0.339713, tank: 9.378159
+classification done
+th: 3.440041, vel: 8.829084, best_action: -1.000000, tank: 9.374784
+classification done
+th: 4.052658, vel: 12.142567, best_action: -1.000000, tank: 9.374784
+classification done
+th: 4.844337, vel: 15.685818, best_action: -1.000000, tank: 9.374784
+classification done
+th: 5.906192, vel: 21.038504, best_action: -1.000000, tank: 9.374784
+classification done
+th: 0.845087, vel: -100.313271, best_action: 1.000000, tank: 9.319671
+classification done
+th: 1.793846, vel: 18.836163, best_action: -1.000000, tank: 9.297503
+classification done
+th: 2.686060, vel: 17.687574, best_action: 1.000000, tank: 9.297503
+classification done
+th: 3.308094, vel: 12.325063, best_action: -1.000000, tank: 9.282348
+classification done
+th: 4.077790, vel: 15.249966, best_action: -1.000000, tank: 9.282348
+classification done
+th: 5.020263, vel: 18.673193, best_action: -1.000000, tank: 9.282348
+classification done
+th: 6.217211, vel: 23.716501, best_action: 0.668517, tank: 9.282348
+classification done
+th: 1.021022, vel: -103.086723, best_action: -0.469769, tank: 9.282348
+classification done
+th: 1.954070, vel: 18.520945, best_action: -1.000000, tank: 9.282348
+classification done
+th: 2.880841, vel: 18.373377, best_action: 1.000000, tank: 9.282348
+classification done
+th: 3.571985, vel: 13.694417, best_action: -1.000000, tank: 9.265655
+classification done
+th: 4.448493, vel: 17.366222, best_action: -1.000000, tank: 9.265655
+classification done
+th: 5.510349, vel: 21.035595, best_action: -1.000000, tank: 9.265655
+classification done
+th: 0.493226, vel: -99.445457, best_action: 1.000000, tank: 9.210354
+classification done
+th: 1.529958, vel: 20.599926, best_action: -0.207890, tank: 9.186410
+classification done
+th: 2.356194, vel: 16.366297, best_action: 1.000000, tank: 9.186410
+classification done
+th: 2.949956, vel: 11.766040, best_action: 0.717824, tank: 9.171893
+classification done
+th: 3.333230, vel: 7.585971, best_action: -1.000000, tank: 9.165116
+classification done
+th: 3.832745, vel: 9.900803, best_action: -1.000000, tank: 9.165116
+classification done
+th: 4.492476, vel: 13.074080, best_action: -1.000000, tank: 9.165116
+classification done
+th: 5.438098, vel: 18.735214, best_action: -1.000000, tank: 9.165116
+classification done
+th: 0.320440, vel: -101.422112, best_action: 1.000000, tank: 9.110256
+classification done
+th: 1.284913, vel: 19.163372, best_action: 0.098098, tank: 9.087769
+classification done
+th: 2.020040, vel: 14.556377, best_action: 1.000000, tank: 9.087514
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.464561, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.279823, vel: 2.743908, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.474601, vel: 3.861209, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.760487, vel: 5.667268, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.096637, vel: 6.663433, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.426504, vel: 6.538760, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.734380, vel: 6.102962, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.007699, vel: 5.418896, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.265309, vel: 5.107171, best_action: 0.459519, tank: 10.000000
+classification done
+th: 5.334424, vel: 1.368743, best_action: 1.000000, tank: 9.999181
+classification done
+th: 5.221327, vel: -2.242657, best_action: 1.000000, tank: 9.999181
+classification done
+th: 4.816061, vel: -8.035558, best_action: 1.000000, tank: 9.999181
+classification done
+th: 4.115486, vel: -13.889832, best_action: -0.196913, tank: 9.999181
+classification done
+th: 3.320664, vel: -15.734074, best_action: -1.000000, tank: 9.996987
+classification done
+th: 2.598097, vel: -14.318741, best_action: -1.000000, tank: 9.979604
+classification done
+th: 2.183407, vel: -8.217546, best_action: -1.000000, tank: 9.969240
+classification done
+th: 2.117434, vel: -1.308708, best_action: -1.000000, tank: 9.967522
+classification done
+th: 2.371902, vel: 5.048886, best_action: 0.356344, tank: 9.967522
+classification done
+th: 2.714336, vel: 6.781940, best_action: 0.481580, tank: 9.964674
+classification done
+th: 3.103894, vel: 7.716146, best_action: -1.000000, tank: 9.960210
+classification done
+th: 3.571991, vel: 9.281198, best_action: -1.000000, tank: 9.960210
+classification done
+th: 4.036946, vel: 9.218724, best_action: -1.000000, tank: 9.960210
+classification done
+th: 4.505044, vel: 9.281023, best_action: -1.000000, tank: 9.960210
+classification done
+th: 4.941725, vel: 8.657773, best_action: -1.000000, tank: 9.960210
+classification done
+th: 5.350132, vel: 8.097373, best_action: -0.651533, tank: 9.960210
+classification done
+th: 5.720840, vel: 7.343079, best_action: 1.000000, tank: 9.960210
+classification done
+th: 5.855928, vel: 2.679263, best_action: 1.000000, tank: 9.956719
+classification done
+th: 5.818229, vel: -0.747778, best_action: 1.000000, tank: 9.956719
+classification done
+th: 5.554336, vel: -5.228929, best_action: 1.000000, tank: 9.956719
+classification done
+th: 5.035973, vel: -10.279668, best_action: 1.000000, tank: 9.956719
+classification done
+th: 4.238008, vel: -15.812865, best_action: 1.000000, tank: 9.956719
+classification done
+th: 3.191858, vel: -20.736376, best_action: -1.000000, tank: 9.956719
+classification done
+th: 2.283938, vel: -17.993942, best_action: -1.000000, tank: 9.935389
+classification done
+th: 1.652478, vel: -12.519282, best_action: -1.000000, tank: 9.920023
+classification done
+th: 1.413717, vel: -4.734413, best_action: -1.000000, tank: 9.913929
+classification done
+th: 1.536239, vel: 2.430512, best_action: -1.000000, tank: 9.913929
+classification done
+th: 1.982345, vel: 8.850609, best_action: 1.000000, tank: 9.913929
+classification done
+th: 2.478716, vel: 9.848446, best_action: 1.000000, tank: 9.901648
+classification done
+th: 2.940531, vel: 9.154805, best_action: -0.771856, tank: 9.890172
+classification done
+th: 3.424336, vel: 9.581449, best_action: -1.000000, tank: 9.890172
+classification done
+th: 3.901858, vel: 9.465814, best_action: -1.000000, tank: 9.890172
+classification done
+th: 4.398230, vel: 9.839271, best_action: -1.000000, tank: 9.890172
+classification done
+th: 4.863185, vel: 9.216526, best_action: -1.000000, tank: 9.890172
+classification done
+th: 5.296725, vel: 8.596022, best_action: -1.000000, tank: 9.890172
+classification done
+th: 5.723982, vel: 8.471766, best_action: 1.000000, tank: 9.890172
+classification done
+th: 5.956460, vel: 4.610457, best_action: 1.000000, tank: 9.884233
+classification done
+th: 6.009867, vel: 1.059225, best_action: 1.000000, tank: 9.882840
+classification done
+th: 5.849646, vel: -3.177351, best_action: 1.000000, tank: 9.882840
+classification done
+th: 5.478937, vel: -7.351680, best_action: 1.000000, tank: 9.882840
+classification done
+th: 4.860044, vel: -12.271105, best_action: 1.000000, tank: 9.882840
+classification done
+th: 3.958407, vel: -17.867296, best_action: 0.066447, tank: 9.882840
+classification done
+th: 2.915398, vel: -20.641376, best_action: -1.000000, tank: 9.882840
+classification done
+th: 2.104867, vel: -16.063473, best_action: -1.000000, tank: 9.863558
+classification done
+th: 1.595929, vel: -10.090569, best_action: -1.000000, tank: 9.850985
+classification done
+th: 1.470265, vel: -2.491601, best_action: -1.000000, tank: 9.847733
+classification done
+th: 1.696460, vel: 4.487103, best_action: -1.000000, tank: 9.847733
+classification done
+th: 2.239955, vel: 10.782140, best_action: 1.000000, tank: 9.847733
+classification done
+th: 2.802301, vel: 11.151007, best_action: 1.000000, tank: 9.833932
+classification done
+th: 3.276681, vel: 9.400928, best_action: -1.000000, tank: 9.822163
+classification done
+th: 3.754203, vel: 9.465448, best_action: -1.000000, tank: 9.822163
+classification done
+th: 4.194026, vel: 8.718520, best_action: -1.000000, tank: 9.822163
+classification done
+th: 4.621283, vel: 8.471252, best_action: -1.000000, tank: 9.822163
+classification done
+th: 5.013982, vel: 7.785936, best_action: -1.000000, tank: 9.822163
+classification done
+th: 5.381548, vel: 7.288207, best_action: 0.564084, tank: 9.822163
+classification done
+th: 5.554336, vel: 3.422487, best_action: 1.000000, tank: 9.819695
+classification done
+th: 5.526062, vel: -0.560715, best_action: 1.000000, tank: 9.819695
+classification done
+th: 5.233893, vel: -5.789062, best_action: 1.000000, tank: 9.819695
+classification done
+th: 4.658982, vel: -11.399286, best_action: 1.000000, tank: 9.819695
+classification done
+th: 3.801327, vel: -16.996721, best_action: -0.885540, tank: 9.819695
+classification done
+th: 2.965663, vel: -16.542229, best_action: -1.000000, tank: 9.802386
+classification done
+th: 2.309071, vel: -13.009825, best_action: -1.000000, tank: 9.786459
+classification done
+th: 1.998053, vel: -6.166949, best_action: -1.000000, tank: 9.778588
+classification done
+th: 2.048318, vel: 0.997055, best_action: -1.000000, tank: 9.778588
+classification done
+th: 2.409601, vel: 7.164619, best_action: 1.000000, tank: 9.778588
+classification done
+th: 2.783451, vel: 7.412945, best_action: 0.027813, tank: 9.769199
+classification done
+th: 3.173009, vel: 7.713553, best_action: -1.000000, tank: 9.769199
+classification done
+th: 3.669380, vel: 9.841216, best_action: -1.000000, tank: 9.769199
+classification done
+th: 4.140619, vel: 9.341267, best_action: -1.000000, tank: 9.769199
+classification done
+th: 4.605575, vel: 9.218372, best_action: -1.000000, tank: 9.769199
+classification done
+th: 5.032831, vel: 8.472933, best_action: -1.000000, tank: 9.769199
+classification done
+th: 5.434955, vel: 7.973429, best_action: 0.876403, tank: 9.769199
+classification done
+th: 5.614026, vel: 3.546802, best_action: 1.000000, tank: 9.765177
+classification done
+th: 5.570044, vel: -0.872313, best_action: 1.000000, tank: 9.765177
+classification done
+th: 5.259026, vel: -6.162677, best_action: 1.000000, tank: 9.765177
+classification done
+th: 4.671548, vel: -11.649369, best_action: 1.000000, tank: 9.765177
+classification done
+th: 3.798185, vel: -17.307341, best_action: -0.837232, tank: 9.765177
+classification done
+th: 2.946814, vel: -16.853832, best_action: -1.000000, tank: 9.748663
+classification done
+th: 2.268230, vel: -13.446895, best_action: -1.000000, tank: 9.732247
+classification done
+th: 1.944646, vel: -6.416370, best_action: -1.000000, tank: 9.724072
+classification done
+th: 1.988628, vel: 0.872419, best_action: -0.351897, tank: 9.724072
+classification done
+th: 2.283938, vel: 5.853862, best_action: 1.000000, tank: 9.724072
+classification done
+th: 2.550973, vel: 5.298103, best_action: 1.000000, tank: 9.717278
+classification done
+th: 2.774026, vel: 4.422593, best_action: -1.000000, tank: 9.711575
+classification done
+th: 3.097610, vel: 6.415477, best_action: -1.000000, tank: 9.711575
+classification done
+th: 3.490309, vel: 7.785318, best_action: -1.000000, tank: 9.711575
+classification done
+th: 3.964690, vel: 9.405402, best_action: -1.000000, tank: 9.711575
+classification done
+th: 4.448495, vel: 9.590376, best_action: -1.000000, tank: 9.711575
+classification done
+th: 4.900884, vel: 8.967783, best_action: -1.000000, tank: 9.711575
+classification done
+th: 5.325000, vel: 8.408820, best_action: -1.000000, tank: 9.711575
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.213849, vel: 1.434288, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.424336, vel: 4.173346, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.732212, vel: 6.104409, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.093495, vel: 7.163193, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.451637, vel: 7.099229, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.781504, vel: 6.538880, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.083097, vel: 5.978301, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.359557, vel: 5.480635, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.403540, vel: 0.871969, best_action: 1.000000, tank: 9.998852
+classification done
+th: 5.218185, vel: -3.672417, best_action: 1.000000, tank: 9.998852
+classification done
+th: 4.743805, vel: -9.406526, best_action: 1.000000, tank: 9.998852
+classification done
+th: 3.977256, vel: -15.195430, best_action: -0.562034, tank: 9.998852
+classification done
+th: 3.176150, vel: -15.858147, best_action: -1.000000, tank: 9.988978
+classification done
+th: 2.488141, vel: -13.632850, best_action: -1.000000, tank: 9.972354
+classification done
+th: 2.126858, vel: -7.159224, best_action: -1.000000, tank: 9.963266
+classification done
+th: 2.120575, vel: -0.124641, best_action: -1.000000, tank: 9.963101
+classification done
+th: 2.428451, vel: 6.105988, best_action: 1.000000, tank: 9.963101
+classification done
+th: 2.752035, vel: 6.415355, best_action: -0.188952, tank: 9.954926
+classification done
+th: 3.107035, vel: 7.031235, best_action: -1.000000, tank: 9.954926
+classification done
+th: 3.584557, vel: 9.468634, best_action: -1.000000, tank: 9.954926
+classification done
+th: 4.055796, vel: 9.341822, best_action: -1.000000, tank: 9.954926
+classification done
+th: 4.527035, vel: 9.342937, best_action: -1.000000, tank: 9.954926
+classification done
+th: 4.963717, vel: 8.657269, best_action: -1.000000, tank: 9.954926
+classification done
+th: 5.372124, vel: 8.097213, best_action: -0.279171, tank: 9.954926
+classification done
+th: 5.708274, vel: 6.658548, best_action: 1.000000, tank: 9.954926
+classification done
+th: 5.774247, vel: 1.308345, best_action: 1.000000, tank: 9.953207
+classification done
+th: 5.661150, vel: -2.243092, best_action: 1.000000, tank: 9.953207
+classification done
+th: 5.290442, vel: -7.353722, best_action: 1.000000, tank: 9.953207
+classification done
+th: 4.652699, vel: -12.645863, best_action: 1.000000, tank: 9.953207
+classification done
+th: 3.732212, vel: -18.241541, best_action: -0.909666, tank: 9.953207
+classification done
+th: 2.852566, vel: -17.413557, best_action: -1.000000, tank: 9.934547
+classification done
+th: 2.170841, vel: -13.512362, best_action: -1.000000, tank: 9.918062
+classification done
+th: 1.856681, vel: -6.228620, best_action: -1.000000, tank: 9.910115
+classification done
+th: 1.919513, vel: 1.246664, best_action: -0.362498, tank: 9.910115
+classification done
+th: 2.246239, vel: 6.474940, best_action: 1.000000, tank: 9.910115
+classification done
+th: 2.544690, vel: 5.921185, best_action: 1.000000, tank: 9.902552
+classification done
+th: 2.802301, vel: 5.107672, best_action: -1.000000, tank: 9.895991
+classification done
+th: 3.154159, vel: 6.976191, best_action: -1.000000, tank: 9.895991
+classification done
+th: 3.562566, vel: 8.097052, best_action: -1.000000, tank: 9.895991
+classification done
+th: 4.043230, vel: 9.529979, best_action: -1.000000, tank: 9.895991
+classification done
+th: 4.523894, vel: 9.527726, best_action: -1.000000, tank: 9.895991
+classification done
+th: 4.973141, vel: 8.905334, best_action: -1.000000, tank: 9.895991
+classification done
+th: 5.394114, vel: 8.346518, best_action: -0.120734, tank: 9.895991
+classification done
+th: 5.730265, vel: 6.657898, best_action: 1.000000, tank: 9.895991
+classification done
+th: 5.789956, vel: 1.184006, best_action: 1.000000, tank: 9.894435
+classification done
+th: 5.673716, vel: -2.305380, best_action: 1.000000, tank: 9.894435
+classification done
+th: 5.303009, vel: -7.351661, best_action: 1.000000, tank: 9.894435
+classification done
+th: 4.665265, vel: -12.644358, best_action: 1.000000, tank: 9.894435
+classification done
+th: 3.747920, vel: -18.178932, best_action: -0.861394, tank: 9.894435
+classification done
+th: 2.861991, vel: -17.536896, best_action: -1.000000, tank: 9.876781
+classification done
+th: 2.167699, vel: -13.756803, best_action: -1.000000, tank: 9.860019
+classification done
+th: 1.840973, vel: -6.478535, best_action: -1.000000, tank: 9.851767
+classification done
+th: 1.894380, vel: 1.059430, best_action: -0.369281, tank: 9.851767
+classification done
+th: 2.217964, vel: 6.413575, best_action: 1.000000, tank: 9.851767
+classification done
+th: 2.516416, vel: 5.921885, best_action: 1.000000, tank: 9.844203
+classification done
+th: 2.777168, vel: 5.170167, best_action: -1.000000, tank: 9.837564
+classification done
+th: 3.135309, vel: 7.100913, best_action: -1.000000, tank: 9.837564
+classification done
+th: 3.553141, vel: 8.286041, best_action: -1.000000, tank: 9.837564
+classification done
+th: 4.046371, vel: 9.781072, best_action: -1.000000, tank: 9.837564
+classification done
+th: 4.536460, vel: 9.714725, best_action: -1.000000, tank: 9.837564
+classification done
+th: 4.995132, vel: 9.091987, best_action: -1.000000, tank: 9.837564
+classification done
+th: 5.425530, vel: 8.534393, best_action: 0.248598, tank: 9.837564
+classification done
+th: 5.692566, vel: 5.290346, best_action: 1.000000, tank: 9.836039
+classification done
+th: 5.793097, vel: 1.993983, best_action: 1.000000, tank: 9.833430
+classification done
+th: 5.654867, vel: -2.741568, best_action: 1.000000, tank: 9.833430
+classification done
+th: 5.259026, vel: -7.849932, best_action: 1.000000, tank: 9.833430
+classification done
+th: 4.596150, vel: -13.142916, best_action: 1.000000, tank: 9.833430
+classification done
+th: 3.653672, vel: -18.677349, best_action: -1.000000, tank: 9.833430
+classification done
+th: 2.774026, vel: -17.434610, best_action: -1.000000, tank: 9.812688
+classification done
+th: 2.114292, vel: -13.073628, best_action: -1.000000, tank: 9.796691
+classification done
+th: 1.825265, vel: -5.730562, best_action: -1.000000, tank: 9.789357
+classification done
+th: 1.916372, vel: 1.807414, best_action: -0.380378, tank: 9.789357
+classification done
+th: 2.268230, vel: 6.973016, best_action: 1.000000, tank: 9.789357
+classification done
+th: 2.591814, vel: 6.420192, best_action: 1.000000, tank: 9.781181
+classification done
+th: 2.868274, vel: 5.481510, best_action: -1.000000, tank: 9.774157
+classification done
+th: 3.216991, vel: 6.913912, best_action: -1.000000, tank: 9.774157
+classification done
+th: 3.615973, vel: 7.910351, best_action: -1.000000, tank: 9.774157
+classification done
+th: 4.077787, vel: 9.156258, best_action: -1.000000, tank: 9.774157
+classification done
+th: 4.539601, vel: 9.156434, best_action: -1.000000, tank: 9.774157
+classification done
+th: 4.963717, vel: 8.408978, best_action: -1.000000, tank: 9.774157
+classification done
+th: 5.362699, vel: 7.910669, best_action: -0.279170, tank: 9.774157
+classification done
+th: 5.689425, vel: 6.471606, best_action: 1.000000, tank: 9.774157
+classification done
+th: 5.736548, vel: 0.934618, best_action: 1.000000, tank: 9.772926
+classification done
+th: 5.598318, vel: -2.738970, best_action: 1.000000, tank: 9.772926
+classification done
+th: 5.199336, vel: -7.912385, best_action: 1.000000, tank: 9.772926
+classification done
+th: 4.523894, vel: -13.391790, best_action: 1.000000, tank: 9.772926
+classification done
+th: 3.575132, vel: -18.800013, best_action: -1.000000, tank: 9.772926
+classification done
+th: 2.701770, vel: -17.306988, best_action: -1.000000, tank: 9.752316
+classification done
+th: 2.057743, vel: -12.761850, best_action: -1.000000, tank: 9.736669
+classification done
+th: 1.787566, vel: -5.357145, best_action: -1.000000, tank: 9.729798
+classification done
+th: 1.897522, vel: 2.181098, best_action: -0.437494, tank: 9.729798
+classification done
+th: 2.277655, vel: 7.533648, best_action: 1.000000, tank: 9.729798
+classification done
+th: 2.623230, vel: 6.856109, best_action: 1.000000, tank: 9.721089
+classification done
+th: 2.921681, vel: 5.917072, best_action: -1.000000, tank: 9.713526
+classification done
+th: 3.282964, vel: 7.162772, best_action: -1.000000, tank: 9.713526
+classification done
+th: 3.678805, vel: 7.847597, best_action: -1.000000, tank: 9.713526
+classification done
+th: 4.128053, vel: 8.907285, best_action: -1.000000, tank: 9.713526
+classification done
+th: 4.574159, vel: 8.844640, best_action: -1.000000, tank: 9.713526
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.201283, vel: 1.184852, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.370929, vel: 3.363576, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.619114, vel: 4.919930, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.914425, vel: 5.853755, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.206593, vel: 5.791466, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.476769, vel: 5.355764, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.715531, vel: 4.733855, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.932301, vel: 4.296979, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.127079, vel: 3.861061, best_action: -0.809847, tank: 10.000000
+classification done
+th: 5.303009, vel: 3.484020, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.243319, vel: -1.183480, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.979424, vel: -5.231530, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.423363, vel: -11.026845, best_action: 0.679721, tank: 10.000000
+classification done
+th: 3.612832, vel: -16.044085, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.868274, vel: -14.755988, best_action: -1.000000, tank: 9.982138
+classification done
+th: 2.296504, vel: -11.330026, best_action: -1.000000, tank: 9.968121
+classification done
+th: 2.048318, vel: -4.921491, best_action: -1.000000, tank: 9.961793
+classification done
+th: 2.126858, vel: 1.557898, best_action: -1.000000, tank: 9.961793
+classification done
+th: 2.491283, vel: 7.230357, best_action: 1.000000, tank: 9.961793
+classification done
+th: 2.840000, vel: 6.914049, best_action: -0.906741, tank: 9.953009
+classification done
+th: 3.308097, vel: 9.270904, best_action: -1.000000, tank: 9.953009
+classification done
+th: 3.766770, vel: 9.093974, best_action: -1.000000, tank: 9.953009
+classification done
+th: 4.238008, vel: 9.343119, best_action: -1.000000, tank: 9.953009
+classification done
+th: 4.680973, vel: 8.782357, best_action: -1.000000, tank: 9.953009
+classification done
+th: 5.092522, vel: 8.159819, best_action: -1.000000, tank: 9.953009
+classification done
+th: 5.494645, vel: 7.973577, best_action: 1.000000, tank: 9.953009
+classification done
+th: 5.695707, vel: 3.986956, best_action: 1.000000, tank: 9.947853
+classification done
+th: 5.714557, vel: 0.373931, best_action: 1.000000, tank: 9.947359
+classification done
+th: 5.519778, vel: -3.860601, best_action: 1.000000, tank: 9.947359
+classification done
+th: 5.083097, vel: -8.661733, best_action: 1.000000, tank: 9.947359
+classification done
+th: 4.382522, vel: -13.890383, best_action: 1.000000, tank: 9.947359
+classification done
+th: 3.408628, vel: -19.300310, best_action: -1.000000, tank: 9.947359
+classification done
+th: 2.503849, vel: -17.928480, best_action: -1.000000, tank: 9.926092
+classification done
+th: 1.834690, vel: -13.263811, best_action: -1.000000, tank: 9.909885
+classification done
+th: 1.545664, vel: -5.731123, best_action: -0.371790, tank: 9.902552
+classification done
+th: 1.570796, vel: 0.498041, best_action: -1.000000, tank: 9.902552
+classification done
+th: 1.866106, vel: 5.855833, best_action: 1.000000, tank: 9.902552
+classification done
+th: 2.214823, vel: 6.918297, best_action: 1.000000, tank: 9.893767
+classification done
+th: 2.541548, vel: 6.482396, best_action: 1.000000, tank: 9.885515
+classification done
+th: 2.726902, vel: 3.675831, best_action: -1.000000, tank: 9.880754
+classification done
+th: 2.975088, vel: 4.920715, best_action: -1.000000, tank: 9.880754
+classification done
+th: 3.279823, vel: 6.043197, best_action: -1.000000, tank: 9.880754
+classification done
+th: 3.675663, vel: 7.848375, best_action: -1.000000, tank: 9.880754
+classification done
+th: 4.099778, vel: 8.408806, best_action: -1.000000, tank: 9.880754
+classification done
+th: 4.505044, vel: 8.034930, best_action: -1.000000, tank: 9.880754
+classification done
+th: 4.872610, vel: 7.287628, best_action: -1.000000, tank: 9.880754
+classification done
+th: 5.221327, vel: 6.915278, best_action: -1.000000, tank: 9.880754
+classification done
+th: 5.576327, vel: 7.039042, best_action: 1.000000, tank: 9.880754
+classification done
+th: 5.736548, vel: 3.177792, best_action: 1.000000, tank: 9.876627
+classification done
+th: 5.733407, vel: -0.062297, best_action: 1.000000, tank: 9.876627
+classification done
+th: 5.526062, vel: -4.110237, best_action: 1.000000, tank: 9.876627
+classification done
+th: 5.089380, vel: -8.659843, best_action: 1.000000, tank: 9.876627
+classification done
+th: 4.395088, vel: -13.766349, best_action: 1.000000, tank: 9.876627
+classification done
+th: 3.424336, vel: -19.236145, best_action: -1.000000, tank: 9.876627
+classification done
+th: 2.525841, vel: -17.805744, best_action: -1.000000, tank: 9.855492
+classification done
+th: 1.853540, vel: -13.323443, best_action: -1.000000, tank: 9.839215
+classification done
+th: 1.561372, vel: -5.793191, best_action: -0.363397, tank: 9.831805
+classification done
+th: 1.580221, vel: 0.373526, best_action: -1.000000, tank: 9.831805
+classification done
+th: 1.872389, vel: 5.793194, best_action: 1.000000, tank: 9.831805
+classification done
+th: 2.211681, vel: 6.731318, best_action: 1.000000, tank: 9.823249
+classification done
+th: 2.532124, vel: 6.357480, best_action: 1.000000, tank: 9.815149
+classification done
+th: 2.708053, vel: 3.488441, best_action: -1.000000, tank: 9.810625
+classification done
+th: 2.956239, vel: 4.920418, best_action: -1.000000, tank: 9.810625
+classification done
+th: 3.264115, vel: 6.104051, best_action: -1.000000, tank: 9.810625
+classification done
+th: 3.663097, vel: 7.910665, best_action: -1.000000, tank: 9.810625
+classification done
+th: 4.093495, vel: 8.532358, best_action: -1.000000, tank: 9.810625
+classification done
+th: 4.501902, vel: 8.097373, best_action: -1.000000, tank: 9.810625
+classification done
+th: 4.878893, vel: 7.475980, best_action: -1.000000, tank: 9.810625
+classification done
+th: 5.227611, vel: 6.915287, best_action: -1.000000, tank: 9.810625
+classification done
+th: 5.582610, vel: 7.039023, best_action: 1.000000, tank: 9.810625
+classification done
+th: 5.745973, vel: 3.239731, best_action: 1.000000, tank: 9.806417
+classification done
+th: 5.742831, vel: -0.062334, best_action: 1.000000, tank: 9.806417
+classification done
+th: 5.535486, vel: -4.110309, best_action: 1.000000, tank: 9.806417
+classification done
+th: 5.098805, vel: -8.660703, best_action: 1.000000, tank: 9.806417
+classification done
+th: 4.395088, vel: -13.952945, best_action: 1.000000, tank: 9.806417
+classification done
+th: 3.421195, vel: -19.300692, best_action: -1.000000, tank: 9.806417
+classification done
+th: 2.516416, vel: -17.929552, best_action: -1.000000, tank: 9.785151
+classification done
+th: 1.840973, vel: -13.384901, best_action: -1.000000, tank: 9.768806
+classification done
+th: 1.548805, vel: -5.793541, best_action: -0.369284, tank: 9.761395
+classification done
+th: 1.567655, vel: 0.373541, best_action: -1.000000, tank: 9.761395
+classification done
+th: 1.859823, vel: 5.793536, best_action: 1.000000, tank: 9.761395
+classification done
+th: 2.205398, vel: 6.856109, best_action: 1.000000, tank: 9.752687
+classification done
+th: 2.525841, vel: 6.358111, best_action: 1.000000, tank: 9.744587
+classification done
+th: 2.708053, vel: 3.612887, best_action: -1.000000, tank: 9.739904
+classification done
+th: 2.959380, vel: 4.982501, best_action: -1.000000, tank: 9.739904
+classification done
+th: 3.270398, vel: 6.166342, best_action: -1.000000, tank: 9.739904
+classification done
+th: 3.669380, vel: 7.912224, best_action: -1.000000, tank: 9.739904
+classification done
+th: 4.099778, vel: 8.533382, best_action: -1.000000, tank: 9.739904
+classification done
+th: 4.511327, vel: 8.161284, best_action: -1.000000, tank: 9.739904
+classification done
+th: 4.885177, vel: 7.413528, best_action: -1.000000, tank: 9.739904
+classification done
+th: 5.237035, vel: 6.975914, best_action: -1.000000, tank: 9.739904
+classification done
+th: 5.595177, vel: 7.101481, best_action: 1.000000, tank: 9.739904
+classification done
+th: 5.764823, vel: 3.364528, best_action: 1.000000, tank: 9.735538
+classification done
+th: 5.767964, vel: 0.062289, best_action: 1.000000, tank: 9.735456
+classification done
+th: 5.563761, vel: -4.047955, best_action: 1.000000, tank: 9.735456
+classification done
+th: 5.130221, vel: -8.597376, best_action: 1.000000, tank: 9.735456
+classification done
+th: 4.435929, vel: -13.765531, best_action: 1.000000, tank: 9.735456
+classification done
+th: 3.468318, vel: -19.175795, best_action: -1.000000, tank: 9.735456
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.270398, vel: 2.556779, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.458893, vel: 3.736573, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.738496, vel: 5.542276, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.058938, vel: 6.351935, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.376239, vel: 6.291032, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.668406, vel: 5.791462, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.929159, vel: 5.168844, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.167920, vel: 4.733939, best_action: -0.865499, tank: 10.000000
+classification done
+th: 5.372124, vel: 4.043956, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.337566, vel: -0.685114, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.092522, vel: -4.853899, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.558451, vel: -10.586774, best_action: 1.000000, tank: 10.000000
+classification done
+th: 3.738496, vel: -16.247673, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.949955, vel: -15.626414, best_action: -1.000000, tank: 9.981188
+classification done
+th: 2.346770, vel: -11.952796, best_action: -1.000000, tank: 9.966458
+classification done
+th: 2.079734, vel: -5.294957, best_action: -1.000000, tank: 9.959665
+classification done
+th: 2.155133, vel: 1.495521, best_action: -1.000000, tank: 9.959665
+classification done
+th: 2.528982, vel: 7.416763, best_action: 1.000000, tank: 9.959665
+classification done
+th: 2.899690, vel: 7.350650, best_action: -1.000000, tank: 9.950352
+classification done
+th: 3.411770, vel: 10.152455, best_action: -1.000000, tank: 9.950352
+classification done
+th: 3.926991, vel: 10.210891, best_action: -1.000000, tank: 9.950352
+classification done
+th: 4.451637, vel: 10.397471, best_action: -1.000000, tank: 9.950352
+classification done
+th: 4.941725, vel: 9.711828, best_action: -1.000000, tank: 9.950352
+classification done
+th: 5.400397, vel: 9.091987, best_action: -0.651533, tank: 9.950352
+classification done
+th: 5.830796, vel: 8.524430, best_action: 1.000000, tank: 9.950352
+classification done
+th: 6.044425, vel: 4.236481, best_action: 1.000000, tank: 9.944882
+classification done
+th: 6.088407, vel: 0.872244, best_action: -0.082397, tank: 9.943734
+classification done
+th: 6.025575, vel: -1.244664, best_action: 0.554866, tank: 9.943610
+classification done
+th: 5.915619, vel: -2.178032, best_action: 1.000000, tank: 9.943610
+classification done
+th: 5.658008, vel: -5.108183, best_action: 1.000000, tank: 9.943610
+classification done
+th: 5.171062, vel: -9.658956, best_action: 1.000000, tank: 9.943610
+classification done
+th: 4.417079, vel: -14.946321, best_action: 1.000000, tank: 9.943610
+classification done
+th: 3.396062, vel: -20.231396, best_action: -1.000000, tank: 9.943610
+classification done
+th: 2.475575, vel: -18.244801, best_action: -1.000000, tank: 9.922019
+classification done
+th: 1.809557, vel: -13.198141, best_action: -1.000000, tank: 9.905882
+classification done
+th: 1.529956, vel: -5.543912, best_action: -0.411969, tank: 9.898780
+classification done
+th: 1.561372, vel: 0.622507, best_action: -1.000000, tank: 9.898780
+classification done
+th: 1.866106, vel: 6.041045, best_action: 1.000000, tank: 9.898780
+classification done
+th: 2.233672, vel: 7.292549, best_action: 1.000000, tank: 9.889542
+classification done
+th: 2.591814, vel: 7.106126, best_action: 1.000000, tank: 9.880530
+classification done
+th: 2.821150, vel: 4.548067, best_action: -1.000000, tank: 9.874670
+classification done
+th: 3.125885, vel: 6.041883, best_action: -1.000000, tank: 9.874670
+classification done
+th: 3.487168, vel: 7.163198, best_action: -1.000000, tank: 9.874670
+classification done
+th: 3.923849, vel: 8.657955, best_action: -1.000000, tank: 9.874670
+classification done
+th: 4.373097, vel: 8.909052, best_action: -1.000000, tank: 9.874670
+classification done
+th: 4.790929, vel: 8.283741, best_action: -1.000000, tank: 9.874670
+classification done
+th: 5.180486, vel: 7.723030, best_action: -1.000000, tank: 9.874670
+classification done
+th: 5.551194, vel: 7.352108, best_action: 1.000000, tank: 9.874670
+classification done
+th: 5.708274, vel: 3.115115, best_action: 1.000000, tank: 9.870622
+classification done
+th: 5.670575, vel: -0.747630, best_action: 1.000000, tank: 9.870622
+classification done
+th: 5.375265, vel: -5.851431, best_action: 1.000000, tank: 9.870622
+classification done
+th: 4.822344, vel: -10.963899, best_action: 1.000000, tank: 9.870622
+classification done
+th: 3.983540, vel: -16.622831, best_action: -0.150537, tank: 9.870622
+classification done
+th: 3.059911, vel: -18.282795, best_action: -1.000000, tank: 9.869557
+classification done
+th: 2.255664, vel: -15.936736, best_action: -1.000000, tank: 9.850409
+classification done
+th: 1.790708, vel: -9.219460, best_action: -1.000000, tank: 9.838860
+classification done
+th: 1.712168, vel: -1.558050, best_action: -0.436322, tank: 9.836817
+classification done
+th: 1.932080, vel: 4.357875, best_action: -0.371074, tank: 9.836817
+classification done
+th: 2.337345, vel: 8.031418, best_action: 1.000000, tank: 9.836817
+classification done
+th: 2.689203, vel: 6.980763, best_action: 0.887786, tank: 9.827956
+classification done
+th: 2.987654, vel: 5.910978, best_action: -1.000000, tank: 9.821271
+classification done
+th: 3.342655, vel: 7.038489, best_action: -1.000000, tank: 9.821271
+classification done
+th: 3.719646, vel: 7.474489, best_action: -1.000000, tank: 9.821271
+classification done
+th: 4.137478, vel: 8.284244, best_action: -1.000000, tank: 9.821271
+classification done
+th: 4.545885, vel: 8.097203, best_action: -1.000000, tank: 9.821271
+classification done
+th: 4.919734, vel: 7.412940, best_action: -1.000000, tank: 9.821271
+classification done
+th: 5.265309, vel: 6.851624, best_action: -1.000000, tank: 9.821271
+classification done
+th: 5.607743, vel: 6.790003, best_action: 1.000000, tank: 9.821271
+classification done
+th: 5.742831, vel: 2.679254, best_action: 1.000000, tank: 9.817780
+classification done
+th: 5.692566, vel: -0.996923, best_action: 1.000000, tank: 9.817780
+classification done
+th: 5.394114, vel: -5.914263, best_action: 1.000000, tank: 9.817780
+classification done
+th: 4.834911, vel: -11.088040, best_action: 1.000000, tank: 9.817780
+classification done
+th: 3.996106, vel: -16.626804, best_action: -0.073092, tank: 9.817780
+classification done
+th: 3.009646, vel: -19.522650, best_action: -1.000000, tank: 9.817780
+classification done
+th: 2.243097, vel: -15.190306, best_action: -1.000000, tank: 9.799441
+classification done
+th: 1.759292, vel: -9.592272, best_action: -1.000000, tank: 9.787452
+classification done
+th: 1.665044, vel: -1.869405, best_action: -0.448494, tank: 9.785005
+classification done
+th: 1.869248, vel: 4.046525, best_action: -0.523143, tank: 9.785005
+classification done
+th: 2.274513, vel: 8.031893, best_action: 1.000000, tank: 9.785005
+classification done
+th: 2.651504, vel: 7.479837, best_action: 1.000000, tank: 9.775540
+classification done
+th: 2.962522, vel: 6.168172, best_action: -1.000000, tank: 9.767670
+classification done
+th: 3.323805, vel: 7.163052, best_action: -1.000000, tank: 9.767670
+classification done
+th: 3.707079, vel: 7.599071, best_action: -1.000000, tank: 9.767670
+classification done
+th: 4.134336, vel: 8.471099, best_action: -1.000000, tank: 9.767670
+classification done
+th: 4.549026, vel: 8.221777, best_action: -1.000000, tank: 9.767670
+classification done
+th: 4.932301, vel: 7.599075, best_action: -1.000000, tank: 9.767670
+classification done
+th: 5.287301, vel: 7.038484, best_action: -0.812205, tank: 9.767670
+classification done
+th: 5.620310, vel: 6.596202, best_action: 1.000000, tank: 9.767670
+classification done
+th: 5.723982, vel: 2.056006, best_action: 1.000000, tank: 9.764981
+classification done
+th: 5.645442, vel: -1.557703, best_action: 1.000000, tank: 9.764981
+classification done
+th: 5.312433, vel: -6.604050, best_action: 1.000000, tank: 9.764981
+classification done
+th: 4.715531, vel: -11.838133, best_action: 1.000000, tank: 9.764981
+classification done
+th: 3.835885, vel: -17.431856, best_action: -0.679943, tank: 9.764981
+classification done
+th: 2.953097, vel: -17.474020, best_action: -1.000000, tank: 9.751587
+classification done
+th: 2.224248, vel: -14.442958, best_action: -1.000000, tank: 9.734067
+classification done
+th: 1.850398, vel: -7.412357, best_action: -1.000000, tank: 9.724678
+classification done
+th: 1.853540, vel: 0.062321, best_action: -0.364768, tank: 9.724678
+classification done
+th: 2.130000, vel: 5.482491, best_action: 0.978924, tank: 9.724678
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.474503, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.210707, vel: 1.371976, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.408628, vel: 3.924192, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.694513, vel: 5.667371, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.030663, vel: 6.663310, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.363672, vel: 6.601161, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.668406, vel: 6.041759, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.941725, vel: 5.417930, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.193053, vel: 4.982021, best_action: -0.651282, tank: 10.000000
+classification done
+th: 5.394114, vel: 3.981657, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.340707, vel: -1.058805, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.083097, vel: -5.108275, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.533318, vel: -10.899446, best_action: 1.000000, tank: 10.000000
+classification done
+th: 3.700796, vel: -16.498323, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.902832, vel: -15.815994, best_action: -1.000000, tank: 9.980986
+classification done
+th: 2.290221, vel: -12.139561, best_action: -1.000000, tank: 9.966043
+classification done
+th: 2.023186, vel: -5.294957, best_action: -1.000000, tank: 9.959250
+classification done
+th: 2.101726, vel: 1.558021, best_action: -1.000000, tank: 9.959250
+classification done
+th: 2.481858, vel: 7.541267, best_action: 1.000000, tank: 9.959250
+classification done
+th: 2.861991, vel: 7.539323, best_action: -0.806726, tank: 9.949711
+classification done
+th: 3.361504, vel: 9.892921, best_action: -1.000000, tank: 9.949711
+classification done
+th: 3.854734, vel: 9.777965, best_action: -1.000000, tank: 9.949711
+classification done
+th: 4.357389, vel: 9.963820, best_action: -1.000000, tank: 9.949711
+classification done
+th: 4.831769, vel: 9.403543, best_action: -1.000000, tank: 9.949711
+classification done
+th: 5.274734, vel: 8.780617, best_action: -1.000000, tank: 9.949711
+classification done
+th: 5.714557, vel: 8.721286, best_action: 1.000000, tank: 9.949711
+classification done
+th: 5.962743, vel: 4.921984, best_action: 1.000000, tank: 9.943383
+classification done
+th: 6.034999, vel: 1.433197, best_action: 1.000000, tank: 9.941503
+classification done
+th: 5.896769, vel: -2.741305, best_action: 0.538899, tank: 9.941503
+classification done
+th: 5.617167, vel: -5.538968, best_action: 1.000000, tank: 9.941503
+classification done
+th: 5.149071, vel: -9.282845, best_action: 1.000000, tank: 9.941503
+classification done
+th: 4.413938, vel: -14.577299, best_action: 1.000000, tank: 9.941503
+classification done
+th: 3.408628, vel: -19.919348, best_action: -1.000000, tank: 9.941503
+classification done
+th: 2.497566, vel: -18.058350, best_action: -1.000000, tank: 9.920107
+classification done
+th: 1.831549, vel: -13.197877, best_action: -1.000000, tank: 9.903970
+classification done
+th: 1.555088, vel: -5.481843, best_action: -0.373163, tank: 9.896945
+classification done
+th: 1.583363, vel: 0.560289, best_action: -1.000000, tank: 9.896945
+classification done
+th: 1.881814, vel: 5.916134, best_action: 1.000000, tank: 9.896945
+classification done
+th: 2.243097, vel: 7.167611, best_action: 1.000000, tank: 9.887857
+classification done
+th: 2.588672, vel: 6.856104, best_action: 1.000000, tank: 9.879148
+classification done
+th: 2.802301, vel: 4.236555, best_action: -1.000000, tank: 9.873679
+classification done
+th: 3.091327, vel: 5.730451, best_action: -1.000000, tank: 9.873679
+classification done
+th: 3.436902, vel: 6.851614, best_action: -1.000000, tank: 9.873679
+classification done
+th: 3.864159, vel: 8.470428, best_action: -1.000000, tank: 9.873679
+classification done
+th: 4.303982, vel: 8.720594, best_action: -1.000000, tank: 9.873679
+classification done
+th: 4.721814, vel: 8.285375, best_action: -1.000000, tank: 9.873679
+classification done
+th: 5.105088, vel: 7.599075, best_action: -1.000000, tank: 9.873679
+classification done
+th: 5.469513, vel: 7.227351, best_action: 1.000000, tank: 9.873679
+classification done
+th: 5.607743, vel: 2.740698, best_action: 1.000000, tank: 9.870109
+classification done
+th: 5.535486, vel: -1.432951, best_action: 1.000000, tank: 9.870109
+classification done
+th: 5.193053, vel: -6.790812, best_action: 1.000000, tank: 9.870109
+classification done
+th: 4.580442, vel: -12.147505, best_action: 1.000000, tank: 9.870109
+classification done
+th: 3.685088, vel: -17.743834, best_action: -1.000000, tank: 9.870109
+classification done
+th: 2.833717, vel: -16.871538, best_action: -1.000000, tank: 9.849959
+classification done
+th: 2.180265, vel: -12.949121, best_action: -1.000000, tank: 9.834102
+classification done
+th: 1.881814, vel: -5.918365, best_action: -1.000000, tank: 9.826538
+classification done
+th: 1.947787, vel: 1.308817, best_action: -0.359669, tank: 9.826538
+classification done
+th: 2.261947, vel: 6.226282, best_action: 1.000000, tank: 9.826538
+classification done
+th: 2.538407, vel: 5.484772, best_action: 1.000000, tank: 9.819513
+classification done
+th: 2.767743, vel: 4.546804, best_action: -1.000000, tank: 9.813653
+classification done
+th: 3.085044, vel: 6.290783, best_action: -1.000000, tank: 9.813653
+classification done
+th: 3.458893, vel: 7.412352, best_action: -1.000000, tank: 9.813653
+classification done
+th: 3.911283, vel: 8.969758, best_action: -1.000000, tank: 9.813653
+classification done
+th: 4.369956, vel: 9.093429, best_action: -1.000000, tank: 9.813653
+classification done
+th: 4.800354, vel: 8.533547, best_action: -1.000000, tank: 9.813653
+classification done
+th: 5.199336, vel: 7.910503, best_action: -1.000000, tank: 9.813653
+classification done
+th: 5.588893, vel: 7.723346, best_action: 1.000000, tank: 9.813653
+classification done
+th: 5.767964, vel: 3.551295, best_action: 1.000000, tank: 9.809050
+classification done
+th: 5.771106, vel: 0.062306, best_action: 1.000000, tank: 9.808968
+classification done
+th: 5.541770, vel: -4.546164, best_action: 1.000000, tank: 9.808968
+classification done
+th: 5.064248, vel: -9.468638, best_action: 1.000000, tank: 9.808968
+classification done
+th: 4.307124, vel: -15.010388, best_action: 1.000000, tank: 9.808968
+classification done
+th: 3.292389, vel: -20.106493, best_action: -1.000000, tank: 9.808968
+classification done
+th: 2.390752, vel: -17.872253, best_action: -1.000000, tank: 9.787767
+classification done
+th: 1.743584, vel: -12.825110, best_action: -1.000000, tank: 9.772050
+classification done
+th: 1.489115, vel: -5.045785, best_action: -0.454394, tank: 9.765567
+classification done
+th: 1.542522, vel: 1.058404, best_action: -1.000000, tank: 9.765567
+classification done
+th: 1.872389, vel: 6.544338, best_action: 1.000000, tank: 9.765567
+classification done
+th: 2.258805, vel: 7.666218, best_action: 1.000000, tank: 9.755877
+classification done
+th: 2.635796, vel: 7.480728, best_action: 1.000000, tank: 9.746413
+classification done
+th: 2.865133, vel: 4.547435, best_action: -1.000000, tank: 9.740553
+classification done
+th: 3.157300, vel: 5.793074, best_action: -1.000000, tank: 9.740553
+classification done
+th: 3.493451, vel: 6.664895, best_action: -1.000000, tank: 9.740553
+classification done
+th: 3.901858, vel: 8.097368, best_action: -1.000000, tank: 9.740553
+classification done
+th: 4.325973, vel: 8.408639, best_action: -1.000000, tank: 9.740553
+classification done
+th: 4.718672, vel: 7.786080, best_action: -1.000000, tank: 9.740553
+classification done
+th: 5.083097, vel: 7.224494, best_action: -1.000000, tank: 9.740553
+classification done
+th: 5.428672, vel: 6.851487, best_action: 1.000000, tank: 9.740553
+classification done
+th: 5.541770, vel: 2.242666, best_action: 1.000000, tank: 9.737623
+classification done
+th: 5.434955, vel: -2.118334, best_action: 1.000000, tank: 9.737623
+classification done
+th: 5.061105, vel: -7.412655, best_action: 1.000000, tank: 9.737623
+classification done
+th: 4.407654, vel: -12.959640, best_action: 1.000000, tank: 9.737623
+classification done
+th: 3.477743, vel: -18.428318, best_action: -1.000000, tank: 9.737623
+classification done
+th: 2.626372, vel: -16.870195, best_action: -1.000000, tank: 9.717474
+classification done
+th: 2.001194, vel: -12.388823, best_action: -1.000000, tank: 9.702250
+classification done
+th: 1.753009, vel: -4.921196, best_action: -1.000000, tank: 9.695922
+classification done
+th: 1.878672, vel: 2.492782, best_action: -0.450772, tank: 9.695922
+classification done
+th: 2.265088, vel: 7.658019, best_action: 1.000000, tank: 9.695922
+classification done
+th: 2.613805, vel: 6.918438, best_action: 1.000000, tank: 9.687138
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.279823, vel: 2.743854, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.471460, vel: 3.798789, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.754203, vel: 5.606314, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.080929, vel: 6.476480, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.407654, vel: 6.476609, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.706106, vel: 5.915913, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.973141, vel: 5.294427, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.218185, vel: 4.857459, best_action: -0.120411, tank: 10.000000
+classification done
+th: 5.372124, vel: 3.049129, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.230752, vel: -2.802724, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.872610, vel: -7.100204, best_action: 1.000000, tank: 10.000000
+classification done
+th: 4.219159, vel: -12.955786, best_action: 0.136384, tank: 10.000000
+classification done
+th: 3.377212, vel: -16.666275, best_action: -1.000000, tank: 10.000000
+classification done
+th: 2.692345, vel: -13.574364, best_action: -1.000000, tank: 9.983446
+classification done
+th: 2.236814, vel: -9.026849, best_action: -1.000000, tank: 9.972118
+classification done
+th: 2.120575, vel: -2.305827, best_action: -1.000000, tank: 9.969109
+classification done
+th: 2.327920, vel: 4.113177, best_action: -1.000000, tank: 9.969109
+classification done
+th: 2.811725, vel: 9.597976, best_action: 0.966868, tank: 9.969109
+classification done
+th: 3.245265, vel: 8.587158, best_action: -1.000000, tank: 9.958675
+classification done
+th: 3.776194, vel: 10.529294, best_action: -1.000000, tank: 9.958675
+classification done
+th: 4.256858, vel: 9.527910, best_action: -1.000000, tank: 9.958675
+classification done
+th: 4.715531, vel: 9.093788, best_action: -1.000000, tank: 9.958675
+classification done
+th: 5.139646, vel: 8.408968, best_action: -1.000000, tank: 9.958675
+classification done
+th: 5.541770, vel: 7.973438, best_action: 1.000000, tank: 9.958675
+classification done
+th: 5.720840, vel: 3.551285, best_action: 1.000000, tank: 9.954072
+classification done
+th: 5.701991, vel: -0.373815, best_action: 1.000000, tank: 9.954072
+classification done
+th: 5.425530, vel: -5.479351, best_action: 1.000000, tank: 9.954072
+classification done
+th: 4.888318, vel: -10.651367, best_action: 1.000000, tank: 9.954072
+classification done
+th: 4.065221, vel: -16.313169, best_action: 0.220374, tank: 9.954072
+classification done
+th: 3.075619, vel: -19.588701, best_action: -1.000000, tank: 9.954072
+classification done
+th: 2.296504, vel: -15.441167, best_action: -1.000000, tank: 9.935462
+classification done
+th: 1.793849, vel: -9.966193, best_action: -1.000000, tank: 9.923035
+classification done
+th: 1.680752, vel: -2.243013, best_action: -0.435119, tank: 9.920105
+classification done
+th: 1.862964, vel: 3.610809, best_action: -0.486064, tank: 9.920105
+classification done
+th: 2.252522, vel: 7.720892, best_action: 1.000000, tank: 9.920105
+classification done
+th: 2.610663, vel: 7.104853, best_action: 1.000000, tank: 9.911094
+classification done
+th: 2.918540, vel: 6.104535, best_action: -1.000000, tank: 9.903299
+classification done
+th: 3.286106, vel: 7.287200, best_action: -1.000000, tank: 9.903299
+classification done
+th: 3.685088, vel: 7.910822, best_action: -1.000000, tank: 9.903299
+classification done
+th: 4.134336, vel: 8.907108, best_action: -1.000000, tank: 9.903299
+classification done
+th: 4.574159, vel: 8.720239, best_action: -1.000000, tank: 9.903299
+classification done
+th: 4.979424, vel: 8.034930, best_action: -1.000000, tank: 9.903299
+classification done
+th: 5.356415, vel: 7.476267, best_action: -0.015495, tank: 9.903299
+classification done
+th: 5.648583, vel: 5.785393, best_action: 1.000000, tank: 9.903299
+classification done
+th: 5.642301, vel: -0.124624, best_action: 1.000000, tank: 9.903299
+classification done
+th: 5.434955, vel: -4.111061, best_action: 1.000000, tank: 9.903299
+classification done
+th: 4.966858, vel: -9.283958, best_action: 1.000000, tank: 9.903299
+classification done
+th: 4.209734, vel: -15.010973, best_action: 0.618910, tank: 9.903299
+classification done
+th: 3.238982, vel: -19.216734, best_action: -1.000000, tank: 9.903299
+classification done
+th: 2.425310, vel: -16.124138, best_action: -1.000000, tank: 9.883949
+classification done
+th: 1.872389, vel: -10.956728, best_action: -1.000000, tank: 9.870363
+classification done
+th: 1.709026, vel: -3.238949, best_action: -0.360366, tank: 9.866156
+classification done
+th: 1.840973, vel: 2.614726, best_action: -0.465042, tank: 9.866156
+classification done
+th: 2.177124, vel: 6.661852, best_action: 1.000000, tank: 9.866156
+classification done
+th: 2.491283, vel: 6.232941, best_action: 1.000000, tank: 9.858209
+classification done
+th: 2.770885, vel: 5.543705, best_action: -0.906706, tank: 9.851107
+classification done
+th: 3.138451, vel: 7.279978, best_action: -1.000000, tank: 9.851107
+classification done
+th: 3.546858, vel: 8.097363, best_action: -1.000000, tank: 9.851107
+classification done
+th: 4.027522, vel: 9.528850, best_action: -1.000000, tank: 9.851107
+classification done
+th: 4.508185, vel: 9.527905, best_action: -1.000000, tank: 9.851107
+classification done
+th: 4.954292, vel: 8.842721, best_action: -1.000000, tank: 9.851107
+classification done
+th: 5.372124, vel: 8.284562, best_action: -0.438298, tank: 9.851107
+classification done
+th: 5.733407, vel: 7.155532, best_action: 1.000000, tank: 9.851107
+classification done
+th: 5.843362, vel: 2.180581, best_action: 1.000000, tank: 9.848257
+classification done
+th: 5.783672, vel: -1.183832, best_action: 1.000000, tank: 9.848257
+classification done
+th: 5.494645, vel: -5.732961, best_action: 1.000000, tank: 9.848257
+classification done
+th: 4.948009, vel: -10.838008, best_action: 1.000000, tank: 9.848257
+classification done
+th: 4.118628, vel: -16.435743, best_action: 0.532101, tank: 9.848257
+classification done
+th: 3.097610, vel: -20.216972, best_action: -1.000000, tank: 9.848257
+classification done
+th: 2.265088, vel: -16.504866, best_action: -1.000000, tank: 9.828507
+classification done
+th: 1.709026, vel: -11.024224, best_action: -1.000000, tank: 9.814850
+classification done
+th: 1.542522, vel: -3.301499, best_action: -0.467429, tank: 9.810563
+classification done
+th: 1.668186, vel: 2.490265, best_action: -1.000000, tank: 9.810563
+classification done
+th: 2.070309, vel: 7.977695, best_action: 1.000000, tank: 9.810563
+classification done
+th: 2.510133, vel: 8.725092, best_action: 1.000000, tank: 9.799605
+classification done
+th: 2.912256, vel: 7.972480, best_action: -1.000000, tank: 9.789540
+classification done
+th: 3.370929, vel: 9.095583, best_action: -1.000000, tank: 9.789540
+classification done
+th: 3.845309, vel: 9.405598, best_action: -1.000000, tank: 9.789540
+classification done
+th: 4.344823, vel: 9.901752, best_action: -1.000000, tank: 9.789540
+classification done
+th: 4.816061, vel: 9.342188, best_action: -1.000000, tank: 9.789540
+classification done
+th: 5.252743, vel: 8.657965, best_action: -1.000000, tank: 9.789540
+classification done
+th: 5.679999, vel: 8.471757, best_action: 1.000000, tank: 9.789540
+classification done
+th: 5.906194, vel: 4.485768, best_action: 1.000000, tank: 9.783758
+classification done
+th: 5.959601, vel: 1.059447, best_action: 1.000000, tank: 9.782365
+classification done
+th: 5.796238, vel: -3.239712, best_action: 1.000000, tank: 9.782365
+classification done
+th: 5.416106, vel: -7.538576, best_action: 1.000000, tank: 9.782365
+classification done
+th: 4.775221, vel: -12.707649, best_action: 1.000000, tank: 9.782365
+classification done
+th: 3.861017, vel: -18.117388, best_action: -0.423202, tank: 9.782365
+classification done
+th: 2.921681, vel: -18.594460, best_action: -1.000000, tank: 9.774604
+classification done
+th: 2.120575, vel: -15.874805, best_action: -1.000000, tank: 9.755522
+classification done
+th: 1.690177, vel: -8.534060, best_action: -1.000000, tank: 9.744786
+classification done
+th: 1.643053, vel: -0.934847, best_action: -0.476859, tank: 9.743556
+classification done
+th: 1.884956, vel: 4.794237, best_action: -0.288809, tank: 9.743556
+classification done
+th: 2.312212, vel: 8.467399, best_action: 1.000000, tank: 9.743556
+classification done
+th: 2.682920, vel: 7.354733, best_action: 1.000000, tank: 9.734242
+classification done
+th: 2.990796, vel: 6.105746, best_action: -1.000000, tank: 9.726449
+classification done
+th: 3.348938, vel: 7.100768, best_action: -1.000000, tank: 9.726449
+classification done
+th: 3.725929, vel: 7.474642, best_action: -1.000000, tank: 9.726449
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.210707, vel: 1.371922, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.405486, vel: 3.861902, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.691371, vel: 5.668607, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.021238, vel: 6.540181, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.347964, vel: 6.478031, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.649557, vel: 5.978173, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.916593, vel: 5.293282, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.164779, vel: 4.919837, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.397256, vel: 4.608720, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.409822, vel: 0.249125, best_action: 1.000000, tank: 9.999671
+classification done
+th: 5.211902, vel: -3.922477, best_action: 1.000000, tank: 9.999671
+classification done
+th: 4.734380, vel: -9.469005, best_action: 1.000000, tank: 9.999671
+classification done
+th: 3.964690, vel: -15.258014, best_action: -0.603622, tank: 9.999671
+classification done
+th: 3.157300, vel: -15.982526, best_action: -1.000000, tank: 9.988853
+classification done
+th: 2.459867, vel: -13.820415, best_action: -1.000000, tank: 9.972022
+classification done
+th: 2.079734, vel: -7.534392, best_action: -1.000000, tank: 9.962482
+classification done
+th: 2.051460, vel: -0.560898, best_action: -1.000000, tank: 9.961742
+classification done
+th: 2.337345, vel: 5.666248, best_action: 1.000000, tank: 9.961742
+classification done
+th: 2.642080, vel: 6.046083, best_action: 0.887792, tank: 9.954025
+classification done
+th: 2.899690, vel: 5.102306, best_action: -1.000000, tank: 9.948223
+classification done
+th: 3.220132, vel: 6.353069, best_action: -1.000000, tank: 9.948223
+classification done
+th: 3.575132, vel: 7.037647, best_action: -1.000000, tank: 9.948223
+classification done
+th: 3.989823, vel: 8.220967, best_action: -1.000000, tank: 9.948223
+classification done
+th: 4.404513, vel: 8.221130, best_action: -1.000000, tank: 9.948223
+classification done
+th: 4.787787, vel: 7.598623, best_action: -1.000000, tank: 9.948223
+classification done
+th: 5.139646, vel: 6.977436, best_action: -1.000000, tank: 9.948223
+classification done
+th: 5.478937, vel: 6.727704, best_action: 1.000000, tank: 9.948223
+classification done
+th: 5.595177, vel: 2.305425, best_action: 1.000000, tank: 9.945213
+classification done
+th: 5.500929, vel: -1.869023, best_action: 1.000000, tank: 9.945213
+classification done
+th: 5.136504, vel: -7.226940, best_action: 1.000000, tank: 9.945213
+classification done
+th: 4.498761, vel: -12.645853, best_action: 1.000000, tank: 9.945213
+classification done
+th: 3.581416, vel: -18.177486, best_action: -1.000000, tank: 9.945213
+classification done
+th: 2.723761, vel: -16.995716, best_action: -1.000000, tank: 9.924932
+classification done
+th: 2.079734, vel: -12.761846, best_action: -1.000000, tank: 9.909285
+classification done
+th: 1.800133, vel: -5.543143, best_action: -1.000000, tank: 9.902183
+classification done
+th: 1.891239, vel: 1.807304, best_action: -0.431068, tank: 9.902183
+classification done
+th: 2.239955, vel: 6.911164, best_action: 1.000000, tank: 9.902183
+classification done
+th: 2.557256, vel: 6.295281, best_action: 1.000000, tank: 9.894159
+classification done
+th: 2.821150, vel: 5.232459, best_action: -1.000000, tank: 9.887444
+classification done
+th: 3.154159, vel: 6.602334, best_action: -1.000000, tank: 9.887444
+classification done
+th: 3.531150, vel: 7.474498, best_action: -1.000000, tank: 9.887444
+classification done
+th: 3.974115, vel: 8.781836, best_action: -1.000000, tank: 9.887444
+classification done
+th: 4.413938, vel: 8.720243, best_action: -1.000000, tank: 9.887444
+classification done
+th: 4.825487, vel: 8.159666, best_action: -1.000000, tank: 9.887444
+classification done
+th: 5.205619, vel: 7.536474, best_action: -1.000000, tank: 9.887444
+classification done
+th: 5.576327, vel: 7.350358, best_action: 1.000000, tank: 9.887444
+classification done
+th: 5.742831, vel: 3.302011, best_action: 1.000000, tank: 9.883157
+classification done
+th: 5.730265, vel: -0.249199, best_action: 1.000000, tank: 9.883157
+classification done
+th: 5.488362, vel: -4.794807, best_action: 1.000000, tank: 9.883157
+classification done
+th: 5.265309, vel: -4.422583, best_action: 1.000000, tank: 9.883157
+classification done
+th: 5.293583, vel: 0.560582, best_action: 1.000000, tank: 9.882417
+classification done
+th: 5.293583, vel: 0.000000, best_action: 1.000000, tank: 9.882417
+classification done
+th: 5.337566, vel: 0.873327, best_action: 1.000000, tank: 9.881269
+classification done
+th: 5.365840, vel: 0.560136, best_action: 1.000000, tank: 9.880528
+classification done
+th: 5.450663, vel: 1.680555, best_action: 1.000000, tank: 9.878324
+classification done
+th: 5.551194, vel: 1.993557, best_action: 1.000000, tank: 9.875715
+classification done
+th: 5.730265, vel: 3.552220, best_action: 1.000000, tank: 9.871112
+classification done
+th: 5.855928, vel: 2.492033, best_action: 1.000000, tank: 9.867861
+classification done
+th: 5.805664, vel: -0.996824, best_action: 1.000000, tank: 9.867861
+classification done
+th: 5.636017, vel: -3.361862, best_action: 1.000000, tank: 9.867861
+classification done
+th: 5.642301, vel: 0.124607, best_action: 1.000000, tank: 9.867696
+classification done
+th: 5.771106, vel: 2.554188, best_action: 1.000000, tank: 9.864365
+classification done
+th: 5.793097, vel: 0.436135, best_action: 1.000000, tank: 9.863789
+classification done
+th: 5.868495, vel: 1.494459, best_action: 1.000000, tank: 9.861827
+classification done
+th: 5.969026, vel: 1.993873, best_action: 1.000000, tank: 9.859219
+classification done
+th: 6.053849, vel: 1.682131, best_action: 1.000000, tank: 9.857014
+classification done
+th: 6.031858, vel: -0.436118, best_action: 0.117042, tank: 9.857014
+classification done
+th: 6.078981, vel: 0.933932, best_action: 1.000000, tank: 9.856875
+classification done
+th: 6.157522, vel: 1.556579, best_action: 0.571743, tank: 9.854833
+classification done
+th: 6.261194, vel: 2.053684, best_action: -0.240369, tank: 9.853310
+classification done
+th: 0.081681, vel: -122.407791, best_action: -0.494129, tank: 9.853310
+classification done
+th: 0.204204, vel: 2.433464, best_action: 0.335562, tank: 9.853310
+classification done
+th: 0.289026, vel: 1.682123, best_action: -1.000000, tank: 9.852584
+classification done
+th: 0.408407, vel: 2.367121, best_action: -1.000000, tank: 9.852584
+classification done
+th: 0.471239, vel: 1.245948, best_action: -1.000000, tank: 9.852584
+classification done
+th: 0.486947, vel: 0.311468, best_action: -1.000000, tank: 9.852584
+classification done
+th: 0.424115, vel: -1.246542, best_action: -1.000000, tank: 9.850946
+classification done
+th: 0.276460, vel: -2.927856, best_action: -0.406046, tank: 9.847136
+classification done
+th: 0.097389, vel: -3.550811, best_action: 0.135262, tank: 9.845325
+classification done
+th: 6.280043, vel: 122.574425, best_action: 0.319492, tank: 9.845325
+classification done
+th: 6.264336, vel: -0.311706, best_action: -0.587817, tank: 9.845325
+classification done
+th: 0.053407, vel: -123.095940, best_action: 0.224527, tank: 9.845325
+classification done
+th: 0.150797, vel: 1.934638, best_action: 0.362429, tank: 9.844780
+classification done
+th: 0.157080, vel: 0.124580, best_action: -0.887044, tank: 9.844720
+classification done
+th: 0.163363, vel: 0.124699, best_action: -0.310416, tank: 9.844720
+classification done
+th: 0.163363, vel: 0.000000, best_action: -0.370649, tank: 9.844720
+classification done
+th: 0.191637, vel: 0.561699, best_action: -0.173980, tank: 9.844720
+classification done
+th: 0.229336, vel: 0.747604, best_action: -0.538452, tank: 9.844720
+classification done
+th: 0.232477, vel: 0.062307, best_action: -0.791167, tank: 9.844720
+classification done
+th: 0.213629, vel: -0.373984, best_action: -0.630001, tank: 9.844330
+classification done
+th: 0.172788, vel: -0.810153, best_action: -0.218501, tank: 9.843659
+classification done
+th: 0.091106, vel: -1.620028, best_action: 0.054559, tank: 9.843211
+classification done
+th: 6.245486, vel: 122.040489, best_action: 0.278255, tank: 9.843211
+classification done
+th: 6.091548, vel: -3.054452, best_action: -0.518036, tank: 9.843211
+classification done
+th: 6.060132, vel: -0.622332, best_action: 0.961447, tank: 9.842787
+classification done
+th: 5.997300, vel: -1.244886, best_action: 1.000000, tank: 9.842787
+classification done
+th: 5.950177, vel: -0.934525, best_action: 1.000000, tank: 9.842787
+classification done
+th: 5.884203, vel: -1.307256, best_action: 1.000000, tank: 9.842787
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.475742, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.235840, vel: 1.870808, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.392920, vel: 3.114750, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.414911, vel: 0.435949, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.436902, vel: 0.435785, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.540575, vel: 2.053983, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.725929, vel: 3.674956, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.961549, vel: 4.670640, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.200309, vel: 4.733089, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.432787, vel: 4.609542, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.636991, vel: 4.047884, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.806637, vel: 3.363195, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.960575, vel: 3.051416, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.098805, vel: 2.740110, best_action: -0.303687, tank: 10.000000
+classification done
+th: 5.152212, vel: 1.057631, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.186769, vel: 0.685308, best_action: 1.000000, tank: 9.999097
+classification done
+th: 5.507212, vel: 6.348794, best_action: 1.000000, tank: 9.990996
+classification done
+th: 5.645442, vel: 2.741305, best_action: 1.000000, tank: 9.987426
+classification done
+th: 5.720840, vel: 1.495300, best_action: 1.000000, tank: 9.985464
+classification done
+th: 5.821372, vel: 1.993883, best_action: 1.000000, tank: 9.982856
+classification done
+th: 5.928185, vel: 2.118315, best_action: 1.000000, tank: 9.980086
+classification done
+th: 5.943893, vel: 0.311536, best_action: 1.000000, tank: 9.979674
+classification done
+th: 5.940752, vel: -0.062279, best_action: 1.000000, tank: 9.979674
+classification done
+th: 5.959601, vel: 0.373645, best_action: 1.000000, tank: 9.979180
+classification done
+th: 6.047566, vel: 1.743573, best_action: 1.000000, tank: 9.976894
+classification done
+th: 6.157522, vel: 2.180624, best_action: 0.115579, tank: 9.974045
+classification done
+th: 0.009425, vel: -121.792717, best_action: -0.384158, tank: 9.974045
+classification done
+th: 0.075398, vel: 1.310546, best_action: 0.405193, tank: 9.974045
+classification done
+th: 0.018850, vel: -1.121071, best_action: -0.508391, tank: 9.974045
+classification done
+th: 0.021991, vel: 0.062284, best_action: 0.294101, tank: 9.974045
+classification done
+th: 6.264336, vel: 123.838837, best_action: -0.042456, tank: 9.974045
+classification done
+th: 6.270619, vel: 0.124671, best_action: -0.562627, tank: 9.974045
+classification done
+th: 0.006283, vel: -124.188889, best_action: -0.047784, tank: 9.974045
+classification done
+th: 0.006283, vel: 0.000000, best_action: 0.408012, tank: 9.974045
+classification done
+th: 6.267478, vel: 124.378113, best_action: 0.008403, tank: 9.974045
+classification done
+th: 6.261194, vel: -0.124675, best_action: -0.569212, tank: 9.974045
+classification done
+th: 0.012566, vel: -123.875008, best_action: 0.109357, tank: 9.974045
+classification done
+th: 0.056548, vel: 0.873718, best_action: 0.402239, tank: 9.973925
+classification done
+th: 0.012566, vel: -0.872107, best_action: -0.336744, tank: 9.973925
+classification done
+th: 0.043982, vel: 0.622907, best_action: 0.253006, tank: 9.973925
+classification done
+th: 0.037699, vel: -0.124565, best_action: -0.164651, tank: 9.973925
+classification done
+th: 0.037699, vel: 0.000000, best_action: 0.043487, tank: 9.973925
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.973925
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.973925
+classification done
+th: 0.037699, vel: 0.000000, best_action: -0.032912, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.062398, best_action: -0.032912, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.055357, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.040841, vel: 0.000000, best_action: -0.035335, tank: 9.973925
+classification done
+th: 0.037699, vel: -0.062411, best_action: -0.035335, tank: 9.973922
+classification done
+th: 0.034557, vel: -0.062341, best_action: 0.005122, tank: 9.973919
+classification done
+th: 0.034557, vel: 0.000000, best_action: 0.009392, tank: 9.973919
+classification done
+th: 0.034557, vel: 0.000000, best_action: -0.030370, tank: 9.973919
+classification done
+th: 0.031416, vel: -0.062404, best_action: -0.030370, tank: 9.973916
+classification done
+th: 0.025132, vel: -0.124672, best_action: 0.013752, tank: 9.973911
+classification done
+th: 0.018850, vel: -0.124658, best_action: 0.059033, tank: 9.973911
+classification done
+th: 0.009425, vel: -0.187010, best_action: 0.066776, tank: 9.973911
+classification done
+th: 6.273760, vel: 124.257851, best_action: 0.096418, tank: 9.973911
+classification done
+th: 6.273760, vel: 0.000000, best_action: -0.578516, tank: 9.973911
+classification done
+th: 0.015708, vel: -124.207130, best_action: 0.031403, tank: 9.973911
+classification done
+th: 0.021991, vel: 0.124802, best_action: 0.399197, tank: 9.973907
+classification done
+th: 0.018850, vel: -0.062327, best_action: -0.082711, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: 0.030675, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.018850, vel: 0.000000, best_action: -0.009293, tank: 9.973907
+classification done
+th: 0.015708, vel: -0.062405, best_action: -0.009293, tank: 9.973906
+classification done
+th: 6.280043, vel: 124.289894, best_action: 0.034910, tank: 9.973906
+classification done
+th: 6.264336, vel: -0.311638, best_action: -0.587817, tank: 9.973906
+classification done
+th: 6.276902, vel: 0.249070, best_action: 0.224438, tank: 9.973906
+classification done
+th: 6.280043, vel: 0.062253, best_action: -0.139222, tank: 9.973887
+classification done
+th: 6.280043, vel: 0.000000, best_action: -0.016041, tank: 9.973887
+classification done
+th: 0.000000, vel: -124.611443, best_action: 0.021932, tank: 9.973887
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.413332, tank: 9.973887
+classification done
+th: 6.270619, vel: 124.758644, best_action: 0.017309, tank: 9.973887
+classification done
+th: 6.270619, vel: 0.000000, best_action: -0.573865, tank: 9.973887
+classification done
+th: 0.028275, vel: -123.865860, best_action: 0.036139, tank: 9.973887
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.473259, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.232699, vel: 1.808344, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.477743, vel: 4.857646, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.930133, vel: 8.967091, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.633849, vel: 13.949344, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.620310, vel: 19.548199, best_action: -1.000000, tank: 10.000000
+classification done
+th: 0.512080, vel: -101.239265, best_action: 1.000000, tank: 9.945098
+classification done
+th: 1.457699, vel: 18.787998, best_action: -0.241605, tank: 9.922996
+classification done
+th: 2.189690, vel: 14.497169, best_action: 1.000000, tank: 9.922996
+classification done
+th: 2.676637, vel: 9.654364, best_action: 1.000000, tank: 9.910933
+classification done
+th: 2.883982, vel: 4.109671, best_action: -1.000000, tank: 9.905622
+classification done
+th: 3.107035, vel: 4.421541, best_action: -1.000000, tank: 9.905622
+classification done
+th: 3.392920, vel: 5.666458, best_action: -1.000000, tank: 9.905622
+classification done
+th: 3.873584, vel: 9.527160, best_action: -1.000000, tank: 9.905622
+classification done
+th: 4.599292, vel: 14.382702, best_action: -1.000000, tank: 9.905622
+classification done
+th: 5.604601, vel: 19.917376, best_action: -1.000000, tank: 9.905622
+classification done
+th: 0.518363, vel: -100.799423, best_action: 1.000000, tank: 9.850614
+classification done
+th: 1.482832, vel: 19.161003, best_action: -0.253004, tank: 9.828126
+classification done
+th: 2.243098, vel: 15.056849, best_action: 1.000000, tank: 9.828126
+classification done
+th: 2.761461, vel: 10.277843, best_action: 1.000000, tank: 9.815334
+classification done
+th: 3.015929, vel: 5.041970, best_action: -1.000000, tank: 9.808851
+classification done
+th: 3.308097, vel: 5.791582, best_action: -1.000000, tank: 9.808851
+classification done
+th: 3.691372, vel: 7.596839, best_action: -1.000000, tank: 9.808851
+classification done
+th: 4.310266, vel: 12.269402, best_action: -1.000000, tank: 9.808851
+classification done
+th: 5.205619, vel: 17.739614, best_action: -1.000000, tank: 9.808851
+classification done
+th: 0.062831, vel: -101.922157, best_action: 1.000000, tank: 9.754116
+classification done
+th: 1.033584, vel: 19.287743, best_action: 0.353317, tank: 9.731501
+classification done
+th: 1.765574, vel: 14.496286, best_action: -1.000000, tank: 9.726336
+classification done
+th: 2.428451, vel: 13.140604, best_action: 1.000000, tank: 9.726336
+classification done
+th: 2.802302, vel: 7.408552, best_action: -0.188996, tank: 9.716947
+classification done
+th: 3.107035, vel: 6.033854, best_action: -1.000000, tank: 9.716947
+classification done
+th: 3.559423, vel: 8.966702, best_action: -1.000000, tank: 9.716947
+classification done
+th: 4.146902, vel: 11.644539, best_action: -1.000000, tank: 9.716947
+classification done
+th: 5.004557, vel: 16.992018, best_action: -1.000000, tank: 9.716947
+classification done
+th: 6.122963, vel: 22.159815, best_action: 0.406728, tank: 9.716947
+classification done
+th: 0.703716, vel: -107.531143, best_action: -0.307658, tank: 9.716947
+classification done
+th: 0.801107, vel: 1.934929, best_action: -0.552900, tank: 9.716947
+classification done
+th: 0.631461, vel: -3.360847, best_action: -1.000000, tank: 9.714572
+classification done
+th: 0.464956, vel: -3.301315, best_action: -0.449289, tank: 9.710285
+classification done
+th: 0.342434, vel: -2.429265, best_action: -0.162551, tank: 9.708886
+classification done
+th: 0.216771, vel: -2.491778, best_action: 0.038343, tank: 9.708398
+classification done
+th: 0.078538, vel: -2.740543, best_action: 0.194393, tank: 9.708398
+classification done
+th: 6.220354, vel: 121.769623, best_action: 0.333156, tank: 9.708398
+classification done
+th: 6.078983, vel: -2.804484, best_action: -0.472315, tank: 9.708398
+classification done
+th: 6.009866, vel: -1.368917, best_action: 1.000000, tank: 9.707556
+classification done
+th: 5.881063, vel: -2.553847, best_action: 1.000000, tank: 9.707556
+classification done
+th: 5.739689, vel: -2.803086, best_action: 1.000000, tank: 9.707556
+classification done
+th: 5.529204, vel: -4.173483, best_action: 1.000000, tank: 9.707556
+classification done
+th: 5.287302, vel: -4.796319, best_action: 1.000000, tank: 9.707556
+classification done
+th: 5.042257, vel: -4.857661, best_action: 1.000000, tank: 9.707556
+classification done
+th: 4.806637, vel: -4.670450, best_action: 1.000000, tank: 9.707556
+classification done
+th: 4.586726, vel: -4.359251, best_action: -0.269454, tank: 9.707556
+classification done
+th: 4.501904, vel: -1.679424, best_action: -1.000000, tank: 9.706978
+classification done
+th: 4.756371, vel: 5.043963, best_action: -1.000000, tank: 9.706978
+classification done
+th: 5.089380, vel: 6.600497, best_action: -1.000000, tank: 9.706978
+classification done
+th: 5.010840, vel: -1.556848, best_action: 1.000000, tank: 9.704935
+classification done
+th: 4.797212, vel: -4.234708, best_action: 1.000000, tank: 9.704935
+classification done
+th: 4.611858, vel: -3.674373, best_action: -0.324650, tank: 9.704935
+classification done
+th: 4.577301, vel: -0.684223, best_action: -1.000000, tank: 9.704644
+classification done
+th: 4.781503, vel: 4.044017, best_action: -0.205518, tank: 9.704644
+classification done
+th: 5.013982, vel: 4.604185, best_action: -1.000000, tank: 9.704644
+classification done
+th: 5.174202, vel: 3.176261, best_action: 0.565400, tank: 9.704644
+classification done
+th: 5.155354, vel: -0.373305, best_action: 1.000000, tank: 9.704644
+classification done
+th: 4.797212, vel: -7.095994, best_action: 1.000000, tank: 9.704644
+classification done
+th: 4.303981, vel: -9.776617, best_action: -0.325955, tank: 9.704644
+classification done
+th: 3.829600, vel: -9.391270, best_action: -1.000000, tank: 9.701267
+classification done
+th: 3.631682, vel: -3.922502, best_action: -1.000000, tank: 9.696191
+classification done
+th: 3.672523, vel: 0.809485, best_action: -1.000000, tank: 9.696191
+classification done
+th: 3.760486, vel: 1.742189, best_action: -1.000000, tank: 9.696191
+classification done
+th: 3.681946, vel: -1.556909, best_action: -1.000000, tank: 9.694148
+classification done
+th: 3.484026, vel: -3.922929, best_action: -1.000000, tank: 9.689072
+classification done
+th: 3.210707, vel: -5.417411, best_action: -1.000000, tank: 9.682124
+classification done
+th: 3.085044, vel: -2.490789, best_action: -1.000000, tank: 9.678873
+classification done
+th: 3.072478, vel: -0.249120, best_action: -1.000000, tank: 9.678544
+classification done
+th: 3.059910, vel: -0.248985, best_action: -1.000000, tank: 9.678215
+classification done
+th: 3.006504, vel: -1.057963, best_action: -1.000000, tank: 9.676822
+classification done
+th: 2.943671, vel: -1.245437, best_action: -1.000000, tank: 9.675184
+classification done
+th: 2.931107, vel: -0.249023, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.003362, vel: 1.431267, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.053627, vel: 0.996408, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.059910, vel: 0.124451, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.059910, vel: 0.000000, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.059910, vel: 0.000000, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.066193, vel: 0.124760, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.066193, vel: 0.000000, best_action: -1.000000, tank: 9.674855
+classification done
+th: 3.063053, vel: -0.062351, best_action: -1.000000, tank: 9.674773
+classification done
+th: 3.012787, vel: -0.995910, best_action: -1.000000, tank: 9.673461
+classification done
+th: 2.965662, vel: -0.933471, best_action: -1.000000, tank: 9.672231
+classification done
+th: 2.962522, vel: -0.062191, best_action: -1.000000, tank: 9.672149
+classification done
+th: 2.965662, vel: 0.062217, best_action: -1.000000, tank: 9.672149
+classification done
+th: 2.940530, vel: -0.497943, best_action: -1.000000, tank: 9.671491
+classification done
+th: 2.934247, vel: -0.124476, best_action: -1.000000, tank: 9.671326
+classification done
+th: 2.934247, vel: 0.000000, best_action: -1.000000, tank: 9.671326
+classification done
+th: 2.931107, vel: -0.062338, best_action: -1.000000, tank: 9.671244
+classification done
+th: 2.915399, vel: -0.311225, best_action: -1.000000, tank: 9.670832
+classification done
+th: 2.855708, vel: -1.182538, best_action: -1.000000, tank: 9.669275
+classification done
+th: 2.745753, vel: -2.179385, best_action: -1.000000, tank: 9.666426
+classification done
+th: 2.711194, vel: -0.685011, best_action: -1.000000, tank: 9.665523
+classification done
+th: 2.739470, vel: 0.560007, best_action: -1.000000, tank: 9.665523
+Posizionare il pendolo
+classification done
+th: 0.000000, vel: 0.000000, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 62.473259, best_action: 0.017309, tank: 10.000000
+classification done
+th: 3.141593, vel: 0.000000, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.216991, vel: 1.496560, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.408628, vel: 3.798930, best_action: -1.000000, tank: 10.000000
+classification done
+th: 3.688230, vel: 5.542706, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.011814, vel: 6.414206, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.335398, vel: 6.414210, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.633849, vel: 5.916021, best_action: -1.000000, tank: 10.000000
+classification done
+th: 4.897743, vel: 5.230899, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.142787, vel: 4.857758, best_action: -1.000000, tank: 10.000000
+classification done
+th: 5.375265, vel: 4.608893, best_action: 1.000000, tank: 10.000000
+classification done
+th: 5.381548, vel: 0.124565, best_action: 1.000000, tank: 9.999835
+classification done
+th: 5.281017, vel: -1.993241, best_action: 1.000000, tank: 9.999835
+classification done
+th: 5.485221, vel: 4.048776, best_action: 1.000000, tank: 9.994601
+classification done
+th: 5.780531, vel: 5.855260, best_action: 1.000000, tank: 9.987114
+classification done
+th: 5.906194, vel: 2.492281, best_action: 1.000000, tank: 9.983863
+classification done
+th: 5.899911, vel: -0.124621, best_action: 1.000000, tank: 9.983863
+classification done
+th: 5.862212, vel: -0.747472, best_action: 1.000000, tank: 9.983863
+classification done
+th: 5.881061, vel: 0.373490, best_action: 1.000000, tank: 9.983369
+classification done
+th: 5.953318, vel: 1.432052, best_action: 1.000000, tank: 9.981488
+classification done
+th: 6.041282, vel: 1.744453, best_action: 1.000000, tank: 9.979202
+classification done
+th: 6.091548, vel: 0.997179, best_action: 0.203199, tank: 9.977890
+classification done
+th: 6.166946, vel: 1.493956, best_action: 0.506054, tank: 9.977505
+classification done
+th: 6.217212, vel: 0.995708, best_action: -0.266551, tank: 9.976845
+classification done
+th: 6.226637, vel: 0.186733, best_action: -0.152880, tank: 9.976845
+classification done
+th: 6.226637, vel: 0.000000, best_action: 0.158697, tank: 9.976845
+classification done
+th: 6.226637, vel: 0.000000, best_action: 0.217464, tank: 9.976845
+classification done
+th: 6.217212, vel: -0.187029, best_action: 0.217464, tank: 9.976845
+classification done
+th: 6.217212, vel: 0.000000, best_action: 0.166727, tank: 9.976845
+classification done
+th: 6.217212, vel: 0.000000, best_action: 0.275500, tank: 9.976845
+classification done
+th: 6.217212, vel: 0.000000, best_action: 0.275500, tank: 9.976845
+classification done
+th: 6.217212, vel: 0.000000, best_action: 0.275500, tank: 9.976845
+classification done
+th: 6.217212, vel: 0.000000, best_action: 0.275500, tank: 9.976845
+classification done
+th: 6.220353, vel: 0.062337, best_action: 0.275500, tank: 9.976822
+classification done
+th: 6.251770, vel: 0.622786, best_action: 0.237183, tank: 9.976598
+classification done
+th: 0.025132, vel: -123.353485, best_action: -0.035330, tank: 9.976598
+classification done
+th: 0.062832, vel: 0.748872, best_action: 0.390001, tank: 9.976598
+classification done
+th: 0.081681, vel: 0.373750, best_action: -0.294906, tank: 9.976406
+classification done
+th: 0.091106, vel: 0.186917, best_action: -0.238568, tank: 9.976406
+classification done
+th: 0.097389, vel: 0.124619, best_action: -0.198133, tank: 9.976406
+classification done
+th: 0.097389, vel: 0.000000, best_action: -0.166308, tank: 9.976406
+classification done
+th: 0.094248, vel: -0.062397, best_action: -0.092642, tank: 9.976393
+classification done
+th: 0.084823, vel: -0.186988, best_action: -0.065554, tank: 9.976370
+classification done
+th: 0.084823, vel: 0.000000, best_action: 0.015404, tank: 9.976370
+classification done
+th: 0.084823, vel: 0.000000, best_action: -0.078850, tank: 9.976370
+classification done
+th: 0.084823, vel: 0.000000, best_action: -0.078850, tank: 9.976370
+classification done
+th: 0.078540, vel: -0.124809, best_action: -0.078850, tank: 9.976357
+classification done
+th: 0.059690, vel: -0.373975, best_action: -0.010326, tank: 9.976318
+classification done
+th: 0.025132, vel: -0.685462, best_action: 0.152329, tank: 9.976313
+classification done
+th: 0.015708, vel: -0.186874, best_action: 0.179728, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: 0.090142, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.015708, vel: 0.000000, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.012566, vel: -0.062407, best_action: -0.004795, tank: 9.976313
+classification done
+th: 0.000000, vel: -0.249353, best_action: 0.039094, tank: 9.976312
+classification done
+th: 6.276902, vel: 124.561485, best_action: 0.122779, tank: 9.976312
+classification done
+th: 6.267478, vel: -0.187016, best_action: -0.583168, tank: 9.976312
+classification done
+th: 6.267478, vel: 0.000000, best_action: 0.120335, tank: 9.976312
+classification done
+th: 6.245486, vel: -0.436438, best_action: 0.040875, tank: 9.976312
+classification done
+th: 6.214070, vel: -0.622505, best_action: 0.289144, tank: 9.976312
+classification done
+th: 6.210928, vel: -0.062250, best_action: 0.255272, tank: 9.976312
+classification done
+th: 6.210928, vel: 0.000000, best_action: 0.215905, tank: 9.976312
+classification done
+th: 6.210928, vel: 0.000000, best_action: 0.311938, tank: 9.976312
+classification done
+th: 6.210928, vel: 0.000000, best_action: 0.311938, tank: 9.976312
+classification done
+th: 6.210928, vel: 0.000000, best_action: 0.311938, tank: 9.976312
+classification done
+th: 6.214070, vel: 0.062345, best_action: 0.311938, tank: 9.976286
+classification done
+th: 6.223495, vel: 0.186824, best_action: 0.275783, tank: 9.976209
+classification done
+th: 6.232920, vel: 0.186809, best_action: 0.178222, tank: 9.976141
+classification done
+th: 6.232920, vel: 0.000000, best_action: 0.119288, tank: 9.976141
+classification done
+th: 6.236061, vel: 0.062337, best_action: 0.177188, tank: 9.976131
+classification done
+th: 6.239202, vel: 0.062265, best_action: 0.139829, tank: 9.976117
+classification done
+th: 6.242345, vel: 0.062282, best_action: 0.120543, tank: 9.976106
+classification done
+th: 6.242345, vel: 0.000000, best_action: 0.101221, tank: 9.976106
+classification done
+th: 6.242345, vel: 0.000000, best_action: 0.116480, tank: 9.976106
+classification done
+th: 6.248628, vel: 0.124686, best_action: 0.116480, tank: 9.976087
+classification done
+th: 6.254911, vel: 0.124579, best_action: 0.049881, tank: 9.976068
+classification done
+th: 6.261194, vel: 0.124543, best_action: 0.011363, tank: 9.976059
+classification done
+th: 6.267478, vel: 0.124554, best_action: -0.026472, tank: 9.976057
+classification done
+th: 6.276902, vel: 0.186801, best_action: -0.044352, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.062250, best_action: -0.107842, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: -0.016038, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.280043, vel: 0.000000, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.264336, vel: -0.311638, best_action: 0.021932, tank: 9.976057
+classification done
+th: 6.245486, vel: -0.373499, best_action: 0.224438, tank: 9.976057
+classification done
+th: 6.242345, vel: -0.062259, best_action: 0.301384, tank: 9.976057
+classification done
+th: 6.239202, vel: -0.062285, best_action: 0.105363, tank: 9.976057
+classification done
+th: 6.239202, vel: 0.000000, best_action: 0.109029, tank: 9.976057
+classification done
+th: 6.239202, vel: 0.000000, best_action: 0.136724, tank: 9.976057
+classification done
+th: 6.239202, vel: 0.000000, best_action: 0.136724, tank: 9.976057
+classification done
+th: 6.239202, vel: 0.000000, best_action: 0.136724, tank: 9.976057
+classification done
+th: 6.239202, vel: 0.000000, best_action: 0.136724, tank: 9.976057
+classification done
+th: 6.236061, vel: -0.062350, best_action: 0.136724, tank: 9.976057
+classification done
+th: 6.245486, vel: 0.186852, best_action: 0.112767, tank: 9.976024
+Posizionare il pendolo
